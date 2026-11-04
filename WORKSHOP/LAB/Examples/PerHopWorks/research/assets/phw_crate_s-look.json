@@ -1,0 +1,25 @@
+{
+  "at": "2026-11-04T19:39:55.170365+00:00",
+  "tool": "look",
+  "arguments": {
+    "mode": "angles",
+    "target": [
+      "phw_crate_s"
+    ],
+    "views": [
+      "front",
+      "right",
+      "top",
+      "three_quarter"
+    ],
+    "shading": "solid",
+    "max_size": 1400,
+    "user_prompt": "what gates install them let me know if when you need me to reload blender cli should be available no hurdles here"
+  },
+  "text": [
+    "Tiles left to right, top to bottom: front, right, top, three_quarter. Framed 10 objects, 0.36 x 0.3 x 0.28 m across, centred at [0.0, 0.0, 0.14]."
+  ],
+  "images": [
+    "research/assets/phw_crate_s-angles-0.png"
+  ]
+}

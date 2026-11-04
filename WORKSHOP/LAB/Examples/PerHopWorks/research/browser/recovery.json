@@ -1,0 +1,13 @@
+{
+  "records": [
+    {
+      "test": "automatic WebGL2 fallback with preserved work order",
+      "passed": true
+    },
+    {
+      "test": "keyboard rotation, delete/undo, place/palette error/undo",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

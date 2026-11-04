@@ -1,0 +1,79 @@
+[
+  {
+    "id": "AF41",
+    "tick": 0,
+    "dock": "in",
+    "octet": 136,
+    "class": "AF41",
+    "label": {
+      "application": ""
+    },
+    "size": 500
+  },
+  {
+    "id": "AF43",
+    "tick": 4,
+    "dock": "in",
+    "octet": 152,
+    "class": "AF43",
+    "label": {
+      "application": ""
+    },
+    "size": 500
+  },
+  {
+    "id": "EF",
+    "tick": 8,
+    "dock": "in",
+    "octet": 184,
+    "class": "EF",
+    "label": {
+      "application": ""
+    },
+    "size": 500
+  },
+  {
+    "id": "CS5",
+    "tick": 12,
+    "dock": "in",
+    "octet": 160,
+    "class": "CS5",
+    "label": {
+      "application": ""
+    },
+    "size": 500
+  },
+  {
+    "id": "AF11",
+    "tick": 16,
+    "dock": "in",
+    "octet": 40,
+    "class": "AF11",
+    "label": {
+      "application": ""
+    },
+    "size": 500
+  },
+  {
+    "id": "CS1",
+    "tick": 20,
+    "dock": "in",
+    "octet": 32,
+    "class": "CS1",
+    "label": {
+      "application": ""
+    },
+    "size": 500
+  },
+  {
+    "id": "DF",
+    "tick": 24,
+    "dock": "in",
+    "octet": 0,
+    "class": "DF",
+    "label": {
+      "application": ""
+    },
+    "size": 500
+  }
+]

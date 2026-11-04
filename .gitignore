@@ -1,0 +1,10 @@
+.DS_Store
+
+# Local development caches and secrets
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+.env*
+*.log
+.claude/ralph-loop.local.md

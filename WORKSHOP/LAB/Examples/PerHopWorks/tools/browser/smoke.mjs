@@ -1,0 +1,13 @@
+import {chromium} from 'playwright';
+import {mkdirSync,writeFileSync} from 'node:fs';
+const browser=await chromium.launch({headless:true,executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'});
+const page=await browser.newPage({viewport:{width:1920,height:1080}}),errors=[];
+page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
+await page.goto('http://localhost:8000');await page.getByRole('button',{name:'Continue campaign'}).waitFor();
+mkdirSync('research/browser',{recursive:true});await page.screenshot({path:'research/browser/title.png'});
+await page.getByRole('button',{name:'Continue campaign'}).click();await page.getByRole('button',{name:'Open the work order'}).click();
+await page.screenshot({path:'research/browser/L01-before.png'});
+console.log('Title:',await page.title(),'Errors:',errors);
+console.log((await page.locator('#validation').innerText()));
+writeFileSync('research/browser/smoke.json',JSON.stringify({errors,title:await page.title()},null,2));
+await browser.close();

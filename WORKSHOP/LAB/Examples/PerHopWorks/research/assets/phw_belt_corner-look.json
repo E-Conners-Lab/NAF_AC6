@@ -1,0 +1,25 @@
+{
+  "at": "2026-11-04T19:43:44.798049+00:00",
+  "tool": "look",
+  "arguments": {
+    "mode": "angles",
+    "target": [
+      "phw_belt_corner"
+    ],
+    "views": [
+      "front",
+      "right",
+      "top",
+      "three_quarter"
+    ],
+    "shading": "solid",
+    "max_size": 1400,
+    "user_prompt": "what gates install them let me know if when you need me to reload blender cli should be available no hurdles here"
+  },
+  "text": [
+    "Tiles left to right, top to bottom: front, right, top, three_quarter. Framed 2 objects, 1 x 0.9 x 0.17 m across, centred at [0.0, 0.0, 0.09]."
+  ],
+  "images": [
+    "research/assets/phw_belt_corner-angles-0.png"
+  ]
+}

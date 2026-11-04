@@ -1,0 +1,111 @@
+{
+  "machines": [
+    {
+      "id": "in",
+      "type": "dock_in",
+      "x": 1,
+      "y": 10,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "legacy",
+      "type": "sorter",
+      "x": 7,
+      "y": 10,
+      "rotation": 0,
+      "config": {
+        "mode": "precedence",
+        "rules": [
+          {
+            "value": 1,
+            "port": "p1"
+          },
+          {
+            "value": 4,
+            "port": "p4"
+          },
+          {
+            "value": 5,
+            "port": "p5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "p0",
+      "type": "dock_out",
+      "x": 16,
+      "y": 3,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "p1",
+      "type": "dock_out",
+      "x": 16,
+      "y": 7,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "p4",
+      "type": "dock_out",
+      "x": 16,
+      "y": 11,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "p5",
+      "type": "dock_out",
+      "x": 16,
+      "y": 15,
+      "rotation": 0,
+      "config": {}
+    }
+  ],
+  "links": [
+    {
+      "from": "in",
+      "port": "out",
+      "to": "legacy",
+      "input": "in"
+    },
+    {
+      "from": "legacy",
+      "port": "default",
+      "to": "p0",
+      "input": "in"
+    },
+    {
+      "from": "legacy",
+      "port": "p1",
+      "to": "p1",
+      "input": "in"
+    },
+    {
+      "from": "legacy",
+      "port": "p4",
+      "to": "p4",
+      "input": "in"
+    },
+    {
+      "from": "legacy",
+      "port": "p5",
+      "to": "p5",
+      "input": "in"
+    }
+  ],
+  "submission": {
+    "predictions": {
+      "AF41": "p0",
+      "AF43": "p0",
+      "EF": "p0",
+      "CS5": "p0",
+      "AF11": "p0",
+      "CS1": "p0",
+      "DF": "p0"
+    }
+  }
+}

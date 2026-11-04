@@ -1,0 +1,10 @@
+{
+  "title":"Welcome to the packet factory",
+  "subtitle":"No networking knowledge needed. Start with one small idea.",
+  "steps":[
+    {"title":"A packet is a little delivery.","body":"Imagine sending a message as a collection of small deliveries. This game draws each packet as a crate. The belts stand for its journey through one network device — one hop.","takeaway":"You are arranging how one device handles its traffic.","diagram":"delivery","facts":["F-0007"],"source":"RFC 2475 §2.3.1; factory representation is a game metaphor"},
+    {"title":"Different deliveries need different care.","body":"A live conversation needs steady, timely delivery. A file transfer can share the remaining room. When a connection is busy, queues hold packets and a scheduler decides which queue goes next.","takeaway":"Quality of service means choosing how traffic shares a busy connection.","diagram":"sharing","facts":["F-0012","F-0013","F-0039"],"source":"RFC 3290 §7.1.1–§7.1.2; RFC 4594 §4.1"},
+    {"title":"The lid tells the sorter what to read.","body":"The first six lights form a number called DSCP. A sorter can use that number to choose a lane. The last two, smaller lights are ECN: separate congestion information. They do not change the DSCP number.","takeaway":"For your first task, read only the first six lights.","diagram":"bits","octet":185,"facts":["F-0001","F-0002"],"source":"RFC 2474 §3; RFC 3168 §5"},
+    {"title":"Your first job is just one small edit.","body":"The first factory is already connected. One sorter rule has a typo: it looks for 47, but the voice crates carry 46. Select the sorter, change its first match value to 46, apply it, and run the trace.","takeaway":"You do not need to build a whole factory yet. The guide stays beside the floor.","diagram":"first_edit","facts":["F-0005","F-0007"],"source":"RFC 3246 §2.7; RFC 2475 §2.3.1; task instructions are game rules"}
+  ]
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "time": "2026-11-04T19:02:58.330067+00:00",
+    "tool": "get_rfc",
+    "arguments": {
+      "number": "2474",
+      "format": "metadata"
+    },
+    "result": {
+      "meta": null,
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"number\": \"2474\",\n  \"title\": \"RFC\u00a02474:      Definition of the Differentiated Services Field (DS Field) in the IPv4 and IPv6 Headers\",\n  \"authors\": [],\n  \"date\": \"\",\n  \"status\": \"\",\n  \"abstract\": \"\",\n  \"url\": \"https://www.ietf.org/rfc/rfc2474/\"\n}",
+          "annotations": null,
+          "meta": null
+        }
+      ],
+      "structured_content": null,
+      "is_error": false,
+      "result_type": "complete"
+    }
+  },
+  {
+    "time": "2026-11-04T19:02:59.062569+00:00",
+    "tool": "get_rfc_section",
+    "arguments": {
+      "number": "4594",
+      "section": "4.3"
+    },
+    "result": {
+      "meta": null,
+      "content": [
+        {
+          "type": "text",
+          "text": "Section \"4.3\" not found in RFC 4594",
+          "annotations": null,
+          "meta": null
+        }
+      ],
+      "structured_content": null,
+      "is_error": true,
+      "result_type": "complete"
+    }
+  },
+  {
+    "time": "2026-11-04T19:02:59.068587+00:00",
+    "tool": "get_rfc_section",
+    "arguments": {
+      "number": "4594",
+      "section": "Multimedia Conferencing Service Class"
+    },
+    "result": {
+      "meta": null,
+      "content": [
+        {
+          "type": "text",
+          "text": "Section \"Multimedia Conferencing Service Class\" not found in RFC 4594",
+          "annotations": null,
+          "meta": null
+        }
+      ],
+      "structured_content": null,
+      "is_error": true,
+      "result_type": "complete"
+    }
+  }
+]

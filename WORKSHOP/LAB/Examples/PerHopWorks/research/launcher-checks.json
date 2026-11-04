@@ -1,0 +1,30 @@
+[
+  {
+    "args": [
+      "--port",
+      "0"
+    ],
+    "exit_code": 2,
+    "message": "usage: start.py [-h] [--port PORT] [--no-browser]\nstart.py: error: port must be between 1 and 65535"
+  },
+  {
+    "args": [
+      "--port",
+      "8000",
+      "--no-browser"
+    ],
+    "exit_code": 1,
+    "message": "Could not start port 8000: [Errno 48] Address already in use. Try --port 8001."
+  },
+  {
+    "args": [
+      "--port",
+      "50100",
+      "--no-browser"
+    ],
+    "working_directory": "/tmp",
+    "http_root": 200,
+    "module_mime": "text/javascript",
+    "passed": true
+  }
+]

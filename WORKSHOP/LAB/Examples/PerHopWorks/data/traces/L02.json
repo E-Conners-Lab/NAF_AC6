@@ -1,0 +1,57 @@
+[
+  {
+    "id": "EF",
+    "tick": 0,
+    "dock": "in0",
+    "octet": 0,
+    "class": "EF",
+    "label": {
+      "application": ""
+    },
+    "size": 500
+  },
+  {
+    "id": "AF41",
+    "tick": 0,
+    "dock": "in1",
+    "octet": 0,
+    "class": "AF41",
+    "label": {
+      "application": ""
+    },
+    "size": 500
+  },
+  {
+    "id": "AF31",
+    "tick": 0,
+    "dock": "in2",
+    "octet": 0,
+    "class": "AF31",
+    "label": {
+      "application": ""
+    },
+    "size": 500
+  },
+  {
+    "id": "CS6",
+    "tick": 0,
+    "dock": "in3",
+    "octet": 0,
+    "class": "CS6",
+    "label": {
+      "application": ""
+    },
+    "size": 500
+  },
+  {
+    "id": "CS1",
+    "tick": 0,
+    "dock": "in4",
+    "octet": 0,
+    "class": "CS1",
+    "label": {
+      "application": ""
+    },
+    "size": 500
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "at": "2026-11-04T19:41:55.189495+00:00",
+  "tool": "look",
+  "arguments": {
+    "mode": "angles",
+    "target": [
+      "phw_hall"
+    ],
+    "views": [
+      "front",
+      "right",
+      "top",
+      "three_quarter"
+    ],
+    "shading": "solid",
+    "max_size": 1400,
+    "user_prompt": "what gates install them let me know if when you need me to reload blender cli should be available no hurdles here"
+  },
+  "text": [
+    "Tiles left to right, top to bottom: front, right, top, three_quarter. Framed 2 objects, 28 x 28 x 4.97 m across, centred at [0.0, 0.0, 2.09]."
+  ],
+  "images": [
+    "research/assets/phw_hall-angles-0.png"
+  ]
+}

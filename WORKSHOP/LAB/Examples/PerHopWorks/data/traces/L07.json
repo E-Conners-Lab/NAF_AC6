@@ -1,0 +1,68 @@
+[
+  {
+    "id": "burst-1",
+    "tick": 0,
+    "dock": "in",
+    "octet": 0,
+    "class": "low_latency",
+    "label": {
+      "application": ""
+    },
+    "size": 1000
+  },
+  {
+    "id": "burst-2",
+    "tick": 0,
+    "dock": "in",
+    "octet": 0,
+    "class": "low_latency",
+    "label": {
+      "application": ""
+    },
+    "size": 1000
+  },
+  {
+    "id": "burst-3",
+    "tick": 0,
+    "dock": "in",
+    "octet": 0,
+    "class": "low_latency",
+    "label": {
+      "application": ""
+    },
+    "size": 1000
+  },
+  {
+    "id": "burst-4",
+    "tick": 0,
+    "dock": "in",
+    "octet": 0,
+    "class": "low_latency",
+    "label": {
+      "application": ""
+    },
+    "size": 1000
+  },
+  {
+    "id": "burst-5",
+    "tick": 0,
+    "dock": "in",
+    "octet": 0,
+    "class": "low_latency",
+    "label": {
+      "application": ""
+    },
+    "size": 1000
+  },
+  {
+    "id": "refilled",
+    "tick": 20,
+    "dock": "in",
+    "octet": 0,
+    "class": "low_latency",
+    "label": {
+      "application": ""
+    },
+    "size": 1000
+  }
+]

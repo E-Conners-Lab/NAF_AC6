@@ -1,0 +1,42 @@
+[
+  {
+    "name": "runtime makes no external requests",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "name": "unreadable save is preserved until explicit replacement",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "name": "storage denied remains playable",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "name": "missing GLB falls back to the complete schematic",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "name": "missing decorative images leave the introduction usable",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "name": "missing essential data shows a retry state",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "name": "WebGL2 unavailable keeps Demo presentable",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "name": "missing arrival trace identifies the file and retry action",
+    "passed": true,
+    "errors": []
+  }
+]

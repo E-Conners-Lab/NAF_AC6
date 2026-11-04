@@ -1,0 +1,529 @@
+{
+  "machines": [
+    {
+      "id": "routing",
+      "type": "dock_in",
+      "x": 1,
+      "y": 2,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "access",
+      "type": "dock_in",
+      "x": 1,
+      "y": 11,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "conference",
+      "type": "dock_in",
+      "x": 1,
+      "y": 17,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "out",
+      "type": "dock_out",
+      "x": 31,
+      "y": 14,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "paint-network_control",
+      "type": "paint_booth",
+      "x": 11,
+      "y": 2,
+      "rotation": 0,
+      "config": {
+        "dscp": 48
+      }
+    },
+    {
+      "id": "q-network_control",
+      "type": "buffer_belt",
+      "x": 23,
+      "y": 2,
+      "rotation": 0,
+      "config": {
+        "capacity": 256
+      }
+    },
+    {
+      "id": "paint-oam",
+      "type": "paint_booth",
+      "x": 11,
+      "y": 5,
+      "rotation": 0,
+      "config": {
+        "dscp": 16
+      }
+    },
+    {
+      "id": "q-oam",
+      "type": "buffer_belt",
+      "x": 23,
+      "y": 5,
+      "rotation": 0,
+      "config": {
+        "capacity": 256
+      }
+    },
+    {
+      "id": "paint-standard",
+      "type": "paint_booth",
+      "x": 11,
+      "y": 8,
+      "rotation": 0,
+      "config": {
+        "dscp": 0
+      }
+    },
+    {
+      "id": "q-standard",
+      "type": "buffer_belt",
+      "x": 23,
+      "y": 8,
+      "rotation": 0,
+      "config": {
+        "capacity": 256
+      }
+    },
+    {
+      "id": "paint-telephony",
+      "type": "paint_booth",
+      "x": 11,
+      "y": 11,
+      "rotation": 0,
+      "config": {
+        "dscp": 46
+      }
+    },
+    {
+      "id": "q-telephony",
+      "type": "buffer_belt",
+      "x": 23,
+      "y": 11,
+      "rotation": 0,
+      "config": {
+        "capacity": 256
+      }
+    },
+    {
+      "id": "policer",
+      "type": "tank_single",
+      "x": 16,
+      "y": 11,
+      "rotation": 0,
+      "config": {
+        "rate": 2000,
+        "burst": 1000
+      }
+    },
+    {
+      "id": "voice-recycle",
+      "type": "recycler",
+      "x": 20,
+      "y": 13,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "paint-signaling",
+      "type": "paint_booth",
+      "x": 11,
+      "y": 14,
+      "rotation": 0,
+      "config": {
+        "dscp": 40
+      }
+    },
+    {
+      "id": "q-signaling",
+      "type": "buffer_belt",
+      "x": 23,
+      "y": 14,
+      "rotation": 0,
+      "config": {
+        "capacity": 256
+      }
+    },
+    {
+      "id": "conf-sort",
+      "type": "sorter",
+      "x": 6,
+      "y": 17,
+      "rotation": 0,
+      "config": {
+        "mode": "ba",
+        "rules": [
+          {
+            "value": 34,
+            "port": "af"
+          },
+          {
+            "value": 36,
+            "port": "af"
+          },
+          {
+            "value": 38,
+            "port": "af"
+          }
+        ]
+      }
+    },
+    {
+      "id": "conf-recycle",
+      "type": "recycler",
+      "x": 10,
+      "y": 19,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "q-conferencing",
+      "type": "spillway",
+      "x": 23,
+      "y": 17,
+      "rotation": 0,
+      "config": {
+        "capacity": 64,
+        "thresholds": {
+          "AF43": [
+            10,
+            20
+          ],
+          "AF42": [
+            20,
+            30
+          ],
+          "AF41": [
+            30,
+            40
+          ]
+        },
+        "max_p": 0.1
+      }
+    },
+    {
+      "id": "paint-streaming",
+      "type": "paint_booth",
+      "x": 11,
+      "y": 20,
+      "rotation": 0,
+      "config": {
+        "dscp": 26
+      }
+    },
+    {
+      "id": "q-streaming",
+      "type": "buffer_belt",
+      "x": 23,
+      "y": 20,
+      "rotation": 0,
+      "config": {
+        "capacity": 256
+      }
+    },
+    {
+      "id": "paint-high_throughput",
+      "type": "paint_booth",
+      "x": 11,
+      "y": 23,
+      "rotation": 0,
+      "config": {
+        "dscp": 10
+      }
+    },
+    {
+      "id": "q-high_throughput",
+      "type": "buffer_belt",
+      "x": 23,
+      "y": 23,
+      "rotation": 0,
+      "config": {
+        "capacity": 256
+      }
+    },
+    {
+      "id": "paint-low_priority",
+      "type": "paint_booth",
+      "x": 11,
+      "y": 26,
+      "rotation": 0,
+      "config": {
+        "dscp": 8
+      }
+    },
+    {
+      "id": "q-low_priority",
+      "type": "buffer_belt",
+      "x": 23,
+      "y": 26,
+      "rotation": 0,
+      "config": {
+        "capacity": 256
+      }
+    },
+    {
+      "id": "access-sort",
+      "type": "sorter",
+      "x": 6,
+      "y": 11,
+      "rotation": 0,
+      "config": {
+        "mode": "mf",
+        "rules": [
+          {
+            "field": "application",
+            "value": "snmp",
+            "port": "oam"
+          },
+          {
+            "field": "application",
+            "value": "voip",
+            "port": "telephony"
+          },
+          {
+            "field": "application",
+            "value": "sip",
+            "port": "signaling"
+          },
+          {
+            "field": "application",
+            "value": "streaming",
+            "port": "streaming"
+          },
+          {
+            "field": "application",
+            "value": "backup",
+            "port": "high_throughput"
+          },
+          {
+            "field": "application",
+            "value": "background",
+            "port": "low_priority"
+          }
+        ]
+      }
+    },
+    {
+      "id": "merge",
+      "type": "priority_merger",
+      "x": 28,
+      "y": 14,
+      "rotation": 0,
+      "config": {
+        "quantum": 500,
+        "priority": "telephony",
+        "weights": {
+          "network_control": 3,
+          "oam": 1,
+          "standard": 2,
+          "signaling": 1,
+          "conferencing": 3,
+          "streaming": 2,
+          "high_throughput": 2,
+          "low_priority": 1
+        }
+      }
+    }
+  ],
+  "links": [
+    {
+      "from": "routing",
+      "port": "out",
+      "to": "paint-network_control",
+      "input": "in"
+    },
+    {
+      "from": "paint-network_control",
+      "port": "out",
+      "to": "q-network_control",
+      "input": "in"
+    },
+    {
+      "from": "q-network_control",
+      "port": "out",
+      "to": "merge",
+      "input": "network_control"
+    },
+    {
+      "from": "access-sort",
+      "port": "oam",
+      "to": "paint-oam",
+      "input": "in"
+    },
+    {
+      "from": "paint-oam",
+      "port": "out",
+      "to": "q-oam",
+      "input": "in"
+    },
+    {
+      "from": "q-oam",
+      "port": "out",
+      "to": "merge",
+      "input": "oam"
+    },
+    {
+      "from": "access-sort",
+      "port": "default",
+      "to": "paint-standard",
+      "input": "in"
+    },
+    {
+      "from": "paint-standard",
+      "port": "out",
+      "to": "q-standard",
+      "input": "in"
+    },
+    {
+      "from": "q-standard",
+      "port": "out",
+      "to": "merge",
+      "input": "standard"
+    },
+    {
+      "from": "access-sort",
+      "port": "telephony",
+      "to": "paint-telephony",
+      "input": "in"
+    },
+    {
+      "from": "paint-telephony",
+      "port": "out",
+      "to": "policer",
+      "input": "in"
+    },
+    {
+      "from": "policer",
+      "port": "conform",
+      "to": "q-telephony",
+      "input": "in"
+    },
+    {
+      "from": "policer",
+      "port": "exceed",
+      "to": "voice-recycle",
+      "input": "in"
+    },
+    {
+      "from": "q-telephony",
+      "port": "out",
+      "to": "merge",
+      "input": "telephony"
+    },
+    {
+      "from": "access-sort",
+      "port": "signaling",
+      "to": "paint-signaling",
+      "input": "in"
+    },
+    {
+      "from": "paint-signaling",
+      "port": "out",
+      "to": "q-signaling",
+      "input": "in"
+    },
+    {
+      "from": "q-signaling",
+      "port": "out",
+      "to": "merge",
+      "input": "signaling"
+    },
+    {
+      "from": "conference",
+      "port": "out",
+      "to": "conf-sort",
+      "input": "in"
+    },
+    {
+      "from": "conf-sort",
+      "port": "af",
+      "to": "q-conferencing",
+      "input": "in"
+    },
+    {
+      "from": "conf-sort",
+      "port": "default",
+      "to": "conf-recycle",
+      "input": "in"
+    },
+    {
+      "from": "q-conferencing",
+      "port": "out",
+      "to": "merge",
+      "input": "conferencing"
+    },
+    {
+      "from": "access-sort",
+      "port": "streaming",
+      "to": "paint-streaming",
+      "input": "in"
+    },
+    {
+      "from": "paint-streaming",
+      "port": "out",
+      "to": "q-streaming",
+      "input": "in"
+    },
+    {
+      "from": "q-streaming",
+      "port": "out",
+      "to": "merge",
+      "input": "streaming"
+    },
+    {
+      "from": "access-sort",
+      "port": "high_throughput",
+      "to": "paint-high_throughput",
+      "input": "in"
+    },
+    {
+      "from": "paint-high_throughput",
+      "port": "out",
+      "to": "q-high_throughput",
+      "input": "in"
+    },
+    {
+      "from": "q-high_throughput",
+      "port": "out",
+      "to": "merge",
+      "input": "high_throughput"
+    },
+    {
+      "from": "access-sort",
+      "port": "low_priority",
+      "to": "paint-low_priority",
+      "input": "in"
+    },
+    {
+      "from": "paint-low_priority",
+      "port": "out",
+      "to": "q-low_priority",
+      "input": "in"
+    },
+    {
+      "from": "q-low_priority",
+      "port": "out",
+      "to": "merge",
+      "input": "low_priority"
+    },
+    {
+      "from": "access",
+      "port": "out",
+      "to": "access-sort",
+      "input": "in"
+    },
+    {
+      "from": "merge",
+      "port": "out",
+      "to": "out",
+      "input": "in"
+    }
+  ]
+}

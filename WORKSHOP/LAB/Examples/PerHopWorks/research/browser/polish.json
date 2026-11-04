@@ -1,0 +1,206 @@
+{
+  "keyboard_only": true,
+  "introduction": true,
+  "demo_progress_unchanged": true,
+  "records": [
+    {
+      "mode": "demo",
+      "view": "3d",
+      "tick": 5,
+      "beat": 1,
+      "playing": false,
+      "finished": false,
+      "grade": null,
+      "render": {
+        "maxDrawCalls": 20,
+        "maxLiveCrates": 56,
+        "cameraMode": "demo",
+        "followId": null,
+        "drawCalls": 20,
+        "triangles": 107788,
+        "frames": 14,
+        "medianMs": 16.699999999999932,
+        "p95Ms": 216.60000000000002,
+        "renderer": "WebKit WebGL",
+        "pixelRatio": 1
+      }
+    },
+    {
+      "mode": "demo",
+      "view": "3d",
+      "tick": 10,
+      "beat": 2,
+      "playing": false,
+      "finished": false,
+      "grade": null,
+      "render": {
+        "maxDrawCalls": 27,
+        "maxLiveCrates": 101,
+        "cameraMode": "demo",
+        "followId": null,
+        "drawCalls": 27,
+        "triangles": 122544,
+        "frames": 20,
+        "medianMs": 16.699999999999932,
+        "p95Ms": 216.60000000000002,
+        "renderer": "WebKit WebGL",
+        "pixelRatio": 1
+      }
+    },
+    {
+      "mode": "demo",
+      "view": "3d",
+      "tick": 15,
+      "beat": 3,
+      "playing": false,
+      "finished": false,
+      "grade": null,
+      "render": {
+        "maxDrawCalls": 29,
+        "maxLiveCrates": 145,
+        "cameraMode": "demo",
+        "followId": null,
+        "drawCalls": 29,
+        "triangles": 136220,
+        "frames": 26,
+        "medianMs": 16.699999999999818,
+        "p95Ms": 16.799999999999955,
+        "renderer": "WebKit WebGL",
+        "pixelRatio": 1
+      }
+    },
+    {
+      "mode": "demo",
+      "view": "3d",
+      "tick": 22,
+      "beat": 4,
+      "playing": false,
+      "finished": false,
+      "grade": null,
+      "render": {
+        "maxDrawCalls": 34,
+        "maxLiveCrates": 206,
+        "cameraMode": "demo",
+        "followId": null,
+        "drawCalls": 34,
+        "triangles": 155624,
+        "frames": 32,
+        "medianMs": 16.699999999999818,
+        "p95Ms": 16.799999999999955,
+        "renderer": "WebKit WebGL",
+        "pixelRatio": 1
+      }
+    },
+    {
+      "mode": "demo",
+      "view": "3d",
+      "tick": 30,
+      "beat": 5,
+      "playing": false,
+      "finished": false,
+      "grade": null,
+      "render": {
+        "maxDrawCalls": 34,
+        "maxLiveCrates": 268,
+        "cameraMode": "demo",
+        "followId": null,
+        "drawCalls": 33,
+        "triangles": 174360,
+        "frames": 39,
+        "medianMs": 16.699999999999818,
+        "p95Ms": 16.799999999999955,
+        "renderer": "WebKit WebGL",
+        "pixelRatio": 1
+      }
+    },
+    {
+      "mode": "demo",
+      "view": "3d",
+      "tick": 33,
+      "beat": 6,
+      "playing": false,
+      "finished": false,
+      "grade": null,
+      "render": {
+        "maxDrawCalls": 34,
+        "maxLiveCrates": 284,
+        "cameraMode": "demo",
+        "followId": null,
+        "drawCalls": 25,
+        "triangles": 178044,
+        "frames": 45,
+        "medianMs": 16.699999999999818,
+        "p95Ms": 16.700000000000045,
+        "renderer": "WebKit WebGL",
+        "pixelRatio": 1
+      }
+    },
+    {
+      "mode": "demo",
+      "view": "3d",
+      "tick": 80,
+      "beat": 7,
+      "playing": false,
+      "finished": false,
+      "grade": null,
+      "render": {
+        "maxDrawCalls": 48,
+        "maxLiveCrates": 430,
+        "cameraMode": "demo",
+        "followId": null,
+        "drawCalls": 48,
+        "triangles": 225796,
+        "frames": 52,
+        "medianMs": 16.699999999999818,
+        "p95Ms": 16.799999999999955,
+        "renderer": "WebKit WebGL",
+        "pixelRatio": 1
+      }
+    },
+    {
+      "mode": "demo",
+      "view": "3d",
+      "tick": 160,
+      "beat": 8,
+      "playing": false,
+      "finished": false,
+      "grade": null,
+      "render": {
+        "maxDrawCalls": 93,
+        "maxLiveCrates": 601,
+        "cameraMode": "demo",
+        "followId": null,
+        "drawCalls": 93,
+        "triangles": 284832,
+        "frames": 58,
+        "medianMs": 16.699999999999818,
+        "p95Ms": 16.799999999999955,
+        "renderer": "WebKit WebGL",
+        "pixelRatio": 1
+      }
+    },
+    {
+      "mode": "demo",
+      "view": "3d",
+      "tick": 507,
+      "beat": 9,
+      "playing": false,
+      "finished": true,
+      "grade": null,
+      "render": {
+        "maxDrawCalls": 93,
+        "maxLiveCrates": 601,
+        "cameraMode": "demo",
+        "followId": null,
+        "drawCalls": 76,
+        "triangles": 99236,
+        "frames": 70,
+        "medianMs": 16.699999999999818,
+        "p95Ms": 16.700000000000045,
+        "renderer": "WebKit WebGL",
+        "pixelRatio": 1
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,452 @@
+[
+  {
+    "id": "dock_in",
+    "label": "Input Dock",
+    "element": "DS ingress",
+    "inputs": [],
+    "outputs": [
+      "out"
+    ],
+    "fields": [],
+    "model": "phw_dock_in",
+    "footprint": [
+      1,
+      1
+    ],
+    "facts": [
+      "F-0007"
+    ],
+    "source": "RFC 2475 \u00a72.3.1"
+  },
+  {
+    "id": "dock_out",
+    "label": "Output Dock",
+    "element": "Egress link",
+    "inputs": [
+      "in"
+    ],
+    "outputs": [],
+    "fields": [],
+    "model": "phw_dock_out",
+    "footprint": [
+      1,
+      1
+    ],
+    "facts": [
+      "F-0013"
+    ],
+    "source": "RFC 3290 \u00a77.1.2"
+  },
+  {
+    "id": "belt",
+    "label": "Belt",
+    "element": "Game transport",
+    "inputs": [
+      "in"
+    ],
+    "outputs": [
+      "out"
+    ],
+    "fields": [
+      {
+        "name": "length",
+        "label": "Transit tiles",
+        "type": "integer",
+        "default": 1,
+        "min": 1,
+        "max": 50
+      }
+    ],
+    "model": "phw_belt_straight",
+    "footprint": [
+      1,
+      1
+    ],
+    "facts": [
+      "F-0012"
+    ],
+    "source": "RFC 3290 \u00a77.1.1"
+  },
+  {
+    "id": "sorter",
+    "label": "Sorter",
+    "element": "Classifier",
+    "inputs": [
+      "in"
+    ],
+    "outputs": [
+      "default"
+    ],
+    "fields": [
+      {
+        "name": "mode",
+        "label": "Classification mode",
+        "type": "enum",
+        "options": [
+          "ba",
+          "mf",
+          "precedence"
+        ],
+        "default": "ba"
+      },
+      {
+        "name": "rules",
+        "label": "Ordered rules",
+        "type": "rules",
+        "default": []
+      }
+    ],
+    "model": "phw_sorter",
+    "footprint": [
+      1,
+      1
+    ],
+    "facts": [
+      "F-0007"
+    ],
+    "source": "RFC 2475 \u00a72.3.1",
+    "dynamic_outputs": "rules"
+  },
+  {
+    "id": "paint_booth",
+    "label": "Paint Booth",
+    "element": "Marker",
+    "inputs": [
+      "in"
+    ],
+    "outputs": [
+      "out"
+    ],
+    "fields": [
+      {
+        "name": "dscp",
+        "label": "DSCP bits",
+        "type": "integer",
+        "default": 0,
+        "min": 0,
+        "max": 63
+      }
+    ],
+    "model": "phw_paint_booth",
+    "footprint": [
+      1,
+      1
+    ],
+    "facts": [
+      "F-0008"
+    ],
+    "source": "RFC 2475 \u00a72.3.3.2"
+  },
+  {
+    "id": "tank_single",
+    "label": "Token Tank \u00b7 Single",
+    "element": "Meter",
+    "inputs": [
+      "in"
+    ],
+    "outputs": [
+      "conform",
+      "exceed"
+    ],
+    "fields": [
+      {
+        "name": "rate",
+        "label": "Bytes per second",
+        "type": "integer",
+        "default": 1000,
+        "min": 0,
+        "max": 1000000
+      },
+      {
+        "name": "burst",
+        "label": "Burst bytes",
+        "type": "integer",
+        "default": 1500,
+        "min": 1,
+        "max": 1000000
+      }
+    ],
+    "model": "phw_tank_single",
+    "footprint": [
+      1,
+      1
+    ],
+    "facts": [
+      "F-0009"
+    ],
+    "source": "RFC 2475 \u00a72.3.3.1"
+  },
+  {
+    "id": "tank_cascade",
+    "label": "Token Tank \u00b7 Cascade",
+    "element": "srTCM",
+    "inputs": [
+      "in"
+    ],
+    "outputs": [
+      "green",
+      "yellow",
+      "red"
+    ],
+    "fields": [
+      {
+        "name": "cir",
+        "label": "CIR bytes/s",
+        "type": "integer",
+        "default": 1000,
+        "min": 0,
+        "max": 1000000
+      },
+      {
+        "name": "cbs",
+        "label": "Committed burst",
+        "type": "integer",
+        "default": 1500,
+        "min": 0,
+        "max": 1000000
+      },
+      {
+        "name": "ebs",
+        "label": "Excess burst",
+        "type": "integer",
+        "default": 3000,
+        "min": 0,
+        "max": 1000000
+      },
+      {
+        "name": "mode",
+        "label": "Color mode",
+        "type": "enum",
+        "options": [
+          "blind",
+          "aware"
+        ],
+        "default": "blind"
+      }
+    ],
+    "model": "phw_tank_cascade",
+    "footprint": [
+      1,
+      1
+    ],
+    "facts": [
+      "F-0019"
+    ],
+    "source": "RFC 2697 \u00a73"
+  },
+  {
+    "id": "tank_twin",
+    "label": "Token Tank \u00b7 Twin",
+    "element": "trTCM",
+    "inputs": [
+      "in"
+    ],
+    "outputs": [
+      "green",
+      "yellow",
+      "red"
+    ],
+    "fields": [
+      {
+        "name": "pir",
+        "label": "PIR bytes/s",
+        "type": "integer",
+        "default": 4000,
+        "min": 0,
+        "max": 1000000
+      },
+      {
+        "name": "pbs",
+        "label": "Peak burst",
+        "type": "integer",
+        "default": 3000,
+        "min": 1,
+        "max": 1000000
+      },
+      {
+        "name": "cir",
+        "label": "CIR bytes/s",
+        "type": "integer",
+        "default": 1000,
+        "min": 0,
+        "max": 1000000
+      },
+      {
+        "name": "cbs",
+        "label": "Committed burst",
+        "type": "integer",
+        "default": 1500,
+        "min": 1,
+        "max": 1000000
+      },
+      {
+        "name": "mode",
+        "label": "Color mode",
+        "type": "enum",
+        "options": [
+          "blind",
+          "aware"
+        ],
+        "default": "blind"
+      }
+    ],
+    "model": "phw_tank_twin",
+    "footprint": [
+      1,
+      1
+    ],
+    "facts": [
+      "F-0022"
+    ],
+    "source": "RFC 2698 \u00a73"
+  },
+  {
+    "id": "recycler",
+    "label": "Recycler",
+    "element": "Dropper",
+    "inputs": [
+      "in"
+    ],
+    "outputs": [],
+    "fields": [],
+    "model": "phw_recycler",
+    "footprint": [
+      1,
+      1
+    ],
+    "facts": [
+      "F-0011"
+    ],
+    "source": "RFC 3290 \u00a76.2"
+  },
+  {
+    "id": "buffer_belt",
+    "label": "Buffer Belt",
+    "element": "FIFO queue",
+    "inputs": [
+      "in"
+    ],
+    "outputs": [
+      "out"
+    ],
+    "fields": [
+      {
+        "name": "capacity",
+        "label": "Capacity in crates",
+        "type": "integer",
+        "default": 16,
+        "min": 1,
+        "max": 256
+      }
+    ],
+    "model": "phw_buffer_belt",
+    "footprint": [
+      1,
+      1
+    ],
+    "facts": [
+      "F-0012"
+    ],
+    "source": "RFC 3290 \u00a77.1.1"
+  },
+  {
+    "id": "spillway",
+    "label": "Spillway",
+    "element": "AQM queue",
+    "inputs": [
+      "in"
+    ],
+    "outputs": [
+      "out"
+    ],
+    "fields": [
+      {
+        "name": "capacity",
+        "label": "Capacity in crates",
+        "type": "integer",
+        "default": 64,
+        "min": 1,
+        "max": 256
+      },
+      {
+        "name": "thresholds",
+        "label": "DSCP thresholds",
+        "type": "thresholds",
+        "default": {
+          "AF43": [
+            10,
+            20
+          ],
+          "AF42": [
+            20,
+            30
+          ],
+          "AF41": [
+            30,
+            40
+          ]
+        }
+      },
+      {
+        "name": "max_p",
+        "label": "Maximum early-drop probability",
+        "type": "number",
+        "default": 0.1,
+        "min": 0,
+        "max": 1
+      }
+    ],
+    "model": "phw_buffer_belt",
+    "footprint": [
+      1,
+      1
+    ],
+    "facts": [
+      "F-0031"
+    ],
+    "source": "RFC 4594 \u00a74.3"
+  },
+  {
+    "id": "priority_merger",
+    "label": "Priority Merger",
+    "element": "Scheduler",
+    "inputs": [
+      "in"
+    ],
+    "outputs": [
+      "out"
+    ],
+    "fields": [
+      {
+        "name": "quantum",
+        "label": "DRR base quantum (bytes)",
+        "type": "integer",
+        "default": 1500,
+        "min": 1,
+        "max": 1000000
+      },
+      {
+        "name": "weights",
+        "label": "Input weights",
+        "type": "weights",
+        "default": {}
+      },
+      {
+        "name": "priority",
+        "label": "Priority input",
+        "type": "text",
+        "default": "priority"
+      }
+    ],
+    "model": "phw_priority_merger",
+    "footprint": [
+      1,
+      1
+    ],
+    "facts": [
+      "F-0013"
+    ],
+    "source": "RFC 3290 \u00a77.1.2",
+    "dynamic_inputs": true
+  }
+]

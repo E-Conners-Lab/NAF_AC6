@@ -1,0 +1,35 @@
+[
+  {
+    "id": "routing",
+    "tick": 0,
+    "dock": "trusted",
+    "octet": 192,
+    "class": "network_control",
+    "label": {
+      "application": "routing"
+    },
+    "size": 500
+  },
+  {
+    "id": "spoofed-cs6",
+    "tick": 2,
+    "dock": "user",
+    "octet": 192,
+    "class": "standard",
+    "label": {
+      "application": "web"
+    },
+    "size": 500
+  },
+  {
+    "id": "spoofed-cs7",
+    "tick": 6,
+    "dock": "user",
+    "octet": 224,
+    "class": "standard",
+    "label": {
+      "application": "web"
+    },
+    "size": 500
+  }
+]

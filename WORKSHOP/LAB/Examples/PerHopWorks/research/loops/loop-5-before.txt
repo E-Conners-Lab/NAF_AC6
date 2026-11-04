@@ -1,0 +1,59 @@
+node:internal/modules/esm/resolve:274
+    throw new ERR_MODULE_NOT_FOUND(
+          ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/Users/john.capobianco/NAF_AC6/WORKSHOP/LAB/Examples/PerHopWorks/render/demoPath.js' imported from /Users/john.capobianco/NAF_AC6/WORKSHOP/LAB/Examples/PerHopWorks/tests/demo.test.js
+    at finalizeResolution (node:internal/modules/esm/resolve:274:11)
+    at moduleResolve (node:internal/modules/esm/resolve:864:10)
+    at defaultResolve (node:internal/modules/esm/resolve:990:11)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:712:20)
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:729:38)
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:758:52)
+    at #resolve (node:internal/modules/esm/loader:694:17)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:614:35)
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:143:33)
+    at ModuleJob.link (node:internal/modules/esm/module_job:228:17) {
+  code: 'ERR_MODULE_NOT_FOUND',
+  url: 'file:///Users/john.capobianco/NAF_AC6/WORKSHOP/LAB/Examples/PerHopWorks/render/demoPath.js'
+}
+
+Node.js v25.3.0
+✖ tests/demo.test.js (65.669166ms)
+✔ versioned save round trip and safe recovery (1.033042ms)
+✔ only passing campaign results unlock a level (0.143792ms)
+✖ malformed settings and drafts are rejected before they can crash a view (0.52ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 2
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 72.199084
+
+✖ failing tests:
+
+test at tests/demo.test.js:1:1
+✖ tests/demo.test.js (65.669166ms)
+  'test failed'
+
+test at tests/state.test.js:4:1
+✖ malformed settings and drafts are rejected before they can crash a view (0.52ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  true !== false
+  
+      at TestContext.<anonymous> (file:///Users/john.capobianco/NAF_AC6/WORKSHOP/LAB/Examples/PerHopWorks/tests/state.test.js:5:236)
+      at Test.runInAsyncScope (node:async_hooks:213:14)
+      at Test.run (node:internal/test_runner/test:1106:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:788:18)
+      at Test.postRun (node:internal/test_runner/test:1235:19)
+      at Test.run (node:internal/test_runner/test:1163:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

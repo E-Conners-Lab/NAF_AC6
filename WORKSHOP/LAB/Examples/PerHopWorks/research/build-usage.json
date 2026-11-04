@@ -1,0 +1,86 @@
+{
+  "scope": "Original game build; excludes later documentation and publication work",
+  "start_utc": "2026-11-04T18:46:43.213Z",
+  "finish_utc": "2026-11-04T20:45:16.332Z",
+  "usage_cutoff_utc": "2026-11-04T20:45:16.411Z",
+  "elapsed_seconds": 7113.119,
+  "model": "gpt-6-astra",
+  "service_tier": "not recorded",
+  "agents": [
+    {
+      "agent": "primary",
+      "response_count": 219,
+      "usage": {
+        "input_tokens": 30379750,
+        "cached_input_tokens": 29864192,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 239449,
+        "reasoning_output_tokens": 56902,
+        "total_tokens": 30619199
+      },
+      "reconciled_with_thread_total": true
+    },
+    {
+      "agent": "plan_research",
+      "response_count": 7,
+      "usage": {
+        "input_tokens": 750105,
+        "cached_input_tokens": 717312,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2550,
+        "reasoning_output_tokens": 423,
+        "total_tokens": 752655
+      },
+      "reconciled_with_thread_total": true
+    }
+  ],
+  "response_count": 226,
+  "usage": {
+    "input_tokens": 31129855,
+    "cached_input_tokens": 30581504,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 241999,
+    "reasoning_output_tokens": 57325,
+    "total_tokens": 31371854
+  },
+  "uncached_input_tokens": 548351,
+  "maximum_request_input_tokens": 245500,
+  "cached_input_is_subset_of_input": true,
+  "reasoning_output_is_subset_of_output": true,
+  "image_generations": {
+    "production": 10,
+    "disposable_smoke": 1,
+    "model": "not exposed by tool",
+    "image_token_usage": null
+  },
+  "pricing": {
+    "checked_on": "2026-11-04",
+    "currency": "USD",
+    "kind": "Hypothetical text-model API-equivalent scenarios, not actual billed cost",
+    "source": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+    "subscription_source": "https://learn.chatgpt.com/docs/pricing",
+    "standard_rates_per_million": {
+      "uncached_input": 10,
+      "cached_input": 1,
+      "output": 50
+    },
+    "standard_usd": "48.164964",
+    "fast_usd": "96.329928",
+    "actual_billed_usd": null,
+    "excluded": [
+      "image generation",
+      "separate tool fees",
+      "subscription allocation",
+      "tax",
+      "hardware and electricity",
+      "human labor",
+      "prior specification authoring",
+      "post-build documentation and Git publication"
+    ]
+  },
+  "csv": {
+    "path": "build-usage.csv",
+    "sha256": "ed82abdb69b71b9b5334543a528fa9587f2e0d9e38774a58ada7ee8899666e33"
+  },
+  "method": "Unique token_usage_record response IDs, exact thread ID, inclusive time window; sums reconciled against each thread total. Only allowlisted usage metadata is exported."
+}

@@ -1,0 +1,242 @@
+{
+  "machines": [
+    {
+      "id": "trusted",
+      "type": "dock_in",
+      "x": 1,
+      "y": 5,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "twin-trusted",
+      "type": "tank_twin",
+      "x": 6,
+      "y": 5,
+      "rotation": 0,
+      "config": {
+        "pir": 4000,
+        "pbs": 3000,
+        "cir": 1000,
+        "cbs": 1500,
+        "mode": "aware"
+      }
+    },
+    {
+      "id": "paint-trusted-green",
+      "type": "paint_booth",
+      "x": 13,
+      "y": 2,
+      "rotation": 0,
+      "config": {
+        "dscp": 34
+      }
+    },
+    {
+      "id": "trusted-green-out",
+      "type": "dock_out",
+      "x": 22,
+      "y": 2,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "paint-trusted-yellow",
+      "type": "paint_booth",
+      "x": 13,
+      "y": 5,
+      "rotation": 0,
+      "config": {
+        "dscp": 36
+      }
+    },
+    {
+      "id": "trusted-yellow-out",
+      "type": "dock_out",
+      "x": 22,
+      "y": 5,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "paint-trusted-red",
+      "type": "paint_booth",
+      "x": 13,
+      "y": 8,
+      "rotation": 0,
+      "config": {
+        "dscp": 38
+      }
+    },
+    {
+      "id": "trusted-red-out",
+      "type": "dock_out",
+      "x": 22,
+      "y": 8,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "user",
+      "type": "dock_in",
+      "x": 1,
+      "y": 18,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "twin-user",
+      "type": "tank_twin",
+      "x": 6,
+      "y": 18,
+      "rotation": 0,
+      "config": {
+        "pir": 4000,
+        "pbs": 3000,
+        "cir": 1000,
+        "cbs": 1500,
+        "mode": "blind"
+      }
+    },
+    {
+      "id": "paint-user-green",
+      "type": "paint_booth",
+      "x": 13,
+      "y": 15,
+      "rotation": 0,
+      "config": {
+        "dscp": 34
+      }
+    },
+    {
+      "id": "user-green-out",
+      "type": "dock_out",
+      "x": 22,
+      "y": 15,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "paint-user-yellow",
+      "type": "paint_booth",
+      "x": 13,
+      "y": 18,
+      "rotation": 0,
+      "config": {
+        "dscp": 36
+      }
+    },
+    {
+      "id": "user-yellow-out",
+      "type": "dock_out",
+      "x": 22,
+      "y": 18,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "paint-user-red",
+      "type": "paint_booth",
+      "x": 13,
+      "y": 21,
+      "rotation": 0,
+      "config": {
+        "dscp": 38
+      }
+    },
+    {
+      "id": "user-red-out",
+      "type": "dock_out",
+      "x": 22,
+      "y": 21,
+      "rotation": 0,
+      "config": {}
+    }
+  ],
+  "links": [
+    {
+      "from": "trusted",
+      "port": "out",
+      "to": "twin-trusted",
+      "input": "in"
+    },
+    {
+      "from": "twin-trusted",
+      "port": "green",
+      "to": "paint-trusted-green",
+      "input": "in"
+    },
+    {
+      "from": "paint-trusted-green",
+      "port": "out",
+      "to": "trusted-green-out",
+      "input": "in"
+    },
+    {
+      "from": "twin-trusted",
+      "port": "yellow",
+      "to": "paint-trusted-yellow",
+      "input": "in"
+    },
+    {
+      "from": "paint-trusted-yellow",
+      "port": "out",
+      "to": "trusted-yellow-out",
+      "input": "in"
+    },
+    {
+      "from": "twin-trusted",
+      "port": "red",
+      "to": "paint-trusted-red",
+      "input": "in"
+    },
+    {
+      "from": "paint-trusted-red",
+      "port": "out",
+      "to": "trusted-red-out",
+      "input": "in"
+    },
+    {
+      "from": "user",
+      "port": "out",
+      "to": "twin-user",
+      "input": "in"
+    },
+    {
+      "from": "twin-user",
+      "port": "green",
+      "to": "paint-user-green",
+      "input": "in"
+    },
+    {
+      "from": "paint-user-green",
+      "port": "out",
+      "to": "user-green-out",
+      "input": "in"
+    },
+    {
+      "from": "twin-user",
+      "port": "yellow",
+      "to": "paint-user-yellow",
+      "input": "in"
+    },
+    {
+      "from": "paint-user-yellow",
+      "port": "out",
+      "to": "user-yellow-out",
+      "input": "in"
+    },
+    {
+      "from": "twin-user",
+      "port": "red",
+      "to": "paint-user-red",
+      "input": "in"
+    },
+    {
+      "from": "paint-user-red",
+      "port": "out",
+      "to": "user-red-out",
+      "input": "in"
+    }
+  ]
+}

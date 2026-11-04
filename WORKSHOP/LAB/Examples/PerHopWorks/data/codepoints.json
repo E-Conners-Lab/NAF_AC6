@@ -1,0 +1,170 @@
+[
+  {
+    "name": "DF",
+    "binary": "000000",
+    "decimal": 0,
+    "phb": "CS",
+    "source": "RFC 2474 \u00a74.1",
+    "fact": "F-0037"
+  },
+  {
+    "name": "CS1",
+    "binary": "001000",
+    "decimal": 8,
+    "phb": "CS",
+    "source": "RFC 2474 \u00a74.2.2.1",
+    "fact": "F-0003"
+  },
+  {
+    "name": "CS2",
+    "binary": "010000",
+    "decimal": 16,
+    "phb": "CS",
+    "source": "RFC 2474 \u00a74.2.2.1",
+    "fact": "F-0003"
+  },
+  {
+    "name": "CS3",
+    "binary": "011000",
+    "decimal": 24,
+    "phb": "CS",
+    "source": "RFC 2474 \u00a74.2.2.1",
+    "fact": "F-0003"
+  },
+  {
+    "name": "CS4",
+    "binary": "100000",
+    "decimal": 32,
+    "phb": "CS",
+    "source": "RFC 2474 \u00a74.2.2.1",
+    "fact": "F-0003"
+  },
+  {
+    "name": "CS5",
+    "binary": "101000",
+    "decimal": 40,
+    "phb": "CS",
+    "source": "RFC 2474 \u00a74.2.2.1",
+    "fact": "F-0003"
+  },
+  {
+    "name": "CS6",
+    "binary": "110000",
+    "decimal": 48,
+    "phb": "CS",
+    "source": "RFC 2474 \u00a74.2.2.1",
+    "fact": "F-0003"
+  },
+  {
+    "name": "CS7",
+    "binary": "111000",
+    "decimal": 56,
+    "phb": "CS",
+    "source": "RFC 2474 \u00a74.2.2.1",
+    "fact": "F-0003"
+  },
+  {
+    "name": "EF",
+    "binary": "101110",
+    "decimal": 46,
+    "phb": "EF",
+    "source": "RFC 3246 \u00a72.7",
+    "fact": "F-0005"
+  },
+  {
+    "name": "AF11",
+    "binary": "001010",
+    "decimal": 10,
+    "phb": "AF",
+    "source": "RFC 2597 \u00a76",
+    "fact": "F-0004"
+  },
+  {
+    "name": "AF12",
+    "binary": "001100",
+    "decimal": 12,
+    "phb": "AF",
+    "source": "RFC 2597 \u00a76",
+    "fact": "F-0004"
+  },
+  {
+    "name": "AF13",
+    "binary": "001110",
+    "decimal": 14,
+    "phb": "AF",
+    "source": "RFC 2597 \u00a76",
+    "fact": "F-0004"
+  },
+  {
+    "name": "AF21",
+    "binary": "010010",
+    "decimal": 18,
+    "phb": "AF",
+    "source": "RFC 2597 \u00a76",
+    "fact": "F-0004"
+  },
+  {
+    "name": "AF22",
+    "binary": "010100",
+    "decimal": 20,
+    "phb": "AF",
+    "source": "RFC 2597 \u00a76",
+    "fact": "F-0004"
+  },
+  {
+    "name": "AF23",
+    "binary": "010110",
+    "decimal": 22,
+    "phb": "AF",
+    "source": "RFC 2597 \u00a76",
+    "fact": "F-0004"
+  },
+  {
+    "name": "AF31",
+    "binary": "011010",
+    "decimal": 26,
+    "phb": "AF",
+    "source": "RFC 2597 \u00a76",
+    "fact": "F-0004"
+  },
+  {
+    "name": "AF32",
+    "binary": "011100",
+    "decimal": 28,
+    "phb": "AF",
+    "source": "RFC 2597 \u00a76",
+    "fact": "F-0004"
+  },
+  {
+    "name": "AF33",
+    "binary": "011110",
+    "decimal": 30,
+    "phb": "AF",
+    "source": "RFC 2597 \u00a76",
+    "fact": "F-0004"
+  },
+  {
+    "name": "AF41",
+    "binary": "100010",
+    "decimal": 34,
+    "phb": "AF",
+    "source": "RFC 2597 \u00a76",
+    "fact": "F-0004"
+  },
+  {
+    "name": "AF42",
+    "binary": "100100",
+    "decimal": 36,
+    "phb": "AF",
+    "source": "RFC 2597 \u00a76",
+    "fact": "F-0004"
+  },
+  {
+    "name": "AF43",
+    "binary": "100110",
+    "decimal": 38,
+    "phb": "AF",
+    "source": "RFC 2597 \u00a76",
+    "fact": "F-0004"
+  }
+]

@@ -1,0 +1,140 @@
+{
+  "machines": [
+    {
+      "id": "in",
+      "type": "dock_in",
+      "x": 1,
+      "y": 10,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "out",
+      "type": "dock_out",
+      "x": 28,
+      "y": 10,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "sort",
+      "type": "sorter",
+      "x": 6,
+      "y": 10,
+      "rotation": 0,
+      "config": {
+        "mode": "ba",
+        "rules": [
+          {
+            "value": 34,
+            "port": "af"
+          },
+          {
+            "value": 36,
+            "port": "af"
+          },
+          {
+            "value": 38,
+            "port": "af"
+          },
+          {
+            "value": 46,
+            "port": "af"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spillway",
+      "type": "spillway",
+      "x": 15,
+      "y": 4,
+      "rotation": 0,
+      "config": {
+        "capacity": 64,
+        "thresholds": {
+          "AF43": [
+            10,
+            20
+          ],
+          "AF42": [
+            20,
+            30
+          ],
+          "AF41": [
+            30,
+            40
+          ],
+          "EF": [
+            0,
+            64
+          ]
+        },
+        "max_p": 0.1
+      }
+    },
+    {
+      "id": "protected-q",
+      "type": "buffer_belt",
+      "x": 15,
+      "y": 18,
+      "rotation": 0,
+      "config": {
+        "capacity": 64
+      }
+    },
+    {
+      "id": "merge",
+      "type": "priority_merger",
+      "x": 23,
+      "y": 10,
+      "rotation": 0,
+      "config": {
+        "quantum": 500,
+        "priority": "priority",
+        "weights": {
+          "af": 1,
+          "protected": 1
+        }
+      }
+    }
+  ],
+  "links": [
+    {
+      "from": "in",
+      "port": "out",
+      "to": "sort",
+      "input": "in"
+    },
+    {
+      "from": "sort",
+      "port": "af",
+      "to": "spillway",
+      "input": "in"
+    },
+    {
+      "from": "sort",
+      "port": "default",
+      "to": "protected-q",
+      "input": "in"
+    },
+    {
+      "from": "spillway",
+      "port": "out",
+      "to": "merge",
+      "input": "af"
+    },
+    {
+      "from": "protected-q",
+      "port": "out",
+      "to": "merge",
+      "input": "protected"
+    },
+    {
+      "from": "merge",
+      "port": "out",
+      "to": "out",
+      "input": "in"
+    }
+  ]
+}

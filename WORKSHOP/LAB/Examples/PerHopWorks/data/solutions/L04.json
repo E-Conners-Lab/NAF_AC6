@@ -1,0 +1,377 @@
+{
+  "machines": [
+    {
+      "id": "in",
+      "type": "dock_in",
+      "x": 1,
+      "y": 10,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "paint-telephony",
+      "type": "paint_booth",
+      "x": 13,
+      "y": 1,
+      "rotation": 0,
+      "config": {
+        "dscp": 46
+      }
+    },
+    {
+      "id": "out-telephony",
+      "type": "dock_out",
+      "x": 21,
+      "y": 1,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "paint-signaling",
+      "type": "paint_booth",
+      "x": 13,
+      "y": 3,
+      "rotation": 0,
+      "config": {
+        "dscp": 40
+      }
+    },
+    {
+      "id": "out-signaling",
+      "type": "dock_out",
+      "x": 21,
+      "y": 3,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "paint-conferencing",
+      "type": "paint_booth",
+      "x": 13,
+      "y": 5,
+      "rotation": 0,
+      "config": {
+        "dscp": 34
+      }
+    },
+    {
+      "id": "out-conferencing",
+      "type": "dock_out",
+      "x": 21,
+      "y": 5,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "paint-interactive",
+      "type": "paint_booth",
+      "x": 13,
+      "y": 7,
+      "rotation": 0,
+      "config": {
+        "dscp": 32
+      }
+    },
+    {
+      "id": "out-interactive",
+      "type": "dock_out",
+      "x": 21,
+      "y": 7,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "paint-streaming",
+      "type": "paint_booth",
+      "x": 13,
+      "y": 9,
+      "rotation": 0,
+      "config": {
+        "dscp": 26
+      }
+    },
+    {
+      "id": "out-streaming",
+      "type": "dock_out",
+      "x": 21,
+      "y": 9,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "paint-broadcast",
+      "type": "paint_booth",
+      "x": 13,
+      "y": 11,
+      "rotation": 0,
+      "config": {
+        "dscp": 24
+      }
+    },
+    {
+      "id": "out-broadcast",
+      "type": "dock_out",
+      "x": 21,
+      "y": 11,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "paint-low_latency",
+      "type": "paint_booth",
+      "x": 13,
+      "y": 13,
+      "rotation": 0,
+      "config": {
+        "dscp": 18
+      }
+    },
+    {
+      "id": "out-low_latency",
+      "type": "dock_out",
+      "x": 21,
+      "y": 13,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "paint-oam",
+      "type": "paint_booth",
+      "x": 13,
+      "y": 15,
+      "rotation": 0,
+      "config": {
+        "dscp": 16
+      }
+    },
+    {
+      "id": "out-oam",
+      "type": "dock_out",
+      "x": 21,
+      "y": 15,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "paint-high_throughput",
+      "type": "paint_booth",
+      "x": 13,
+      "y": 17,
+      "rotation": 0,
+      "config": {
+        "dscp": 10
+      }
+    },
+    {
+      "id": "out-high_throughput",
+      "type": "dock_out",
+      "x": 21,
+      "y": 17,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "paint-standard",
+      "type": "paint_booth",
+      "x": 13,
+      "y": 19,
+      "rotation": 0,
+      "config": {
+        "dscp": 0
+      }
+    },
+    {
+      "id": "out-standard",
+      "type": "dock_out",
+      "x": 21,
+      "y": 19,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "sort",
+      "type": "sorter",
+      "x": 6,
+      "y": 10,
+      "rotation": 0,
+      "config": {
+        "mode": "mf",
+        "rules": [
+          {
+            "field": "application",
+            "value": "voip",
+            "port": "telephony"
+          },
+          {
+            "field": "application",
+            "value": "sip",
+            "port": "signaling"
+          },
+          {
+            "field": "application",
+            "value": "conference",
+            "port": "conferencing"
+          },
+          {
+            "field": "application",
+            "value": "gaming",
+            "port": "interactive"
+          },
+          {
+            "field": "application",
+            "value": "streaming",
+            "port": "streaming"
+          },
+          {
+            "field": "application",
+            "value": "broadcast",
+            "port": "broadcast"
+          },
+          {
+            "field": "application",
+            "value": "ordering",
+            "port": "low_latency"
+          },
+          {
+            "field": "application",
+            "value": "snmp",
+            "port": "oam"
+          },
+          {
+            "field": "application",
+            "value": "backup",
+            "port": "high_throughput"
+          }
+        ]
+      }
+    }
+  ],
+  "links": [
+    {
+      "from": "in",
+      "port": "out",
+      "to": "sort",
+      "input": "in"
+    },
+    {
+      "from": "sort",
+      "port": "telephony",
+      "to": "paint-telephony",
+      "input": "in"
+    },
+    {
+      "from": "paint-telephony",
+      "port": "out",
+      "to": "out-telephony",
+      "input": "in"
+    },
+    {
+      "from": "sort",
+      "port": "signaling",
+      "to": "paint-signaling",
+      "input": "in"
+    },
+    {
+      "from": "paint-signaling",
+      "port": "out",
+      "to": "out-signaling",
+      "input": "in"
+    },
+    {
+      "from": "sort",
+      "port": "conferencing",
+      "to": "paint-conferencing",
+      "input": "in"
+    },
+    {
+      "from": "paint-conferencing",
+      "port": "out",
+      "to": "out-conferencing",
+      "input": "in"
+    },
+    {
+      "from": "sort",
+      "port": "interactive",
+      "to": "paint-interactive",
+      "input": "in"
+    },
+    {
+      "from": "paint-interactive",
+      "port": "out",
+      "to": "out-interactive",
+      "input": "in"
+    },
+    {
+      "from": "sort",
+      "port": "streaming",
+      "to": "paint-streaming",
+      "input": "in"
+    },
+    {
+      "from": "paint-streaming",
+      "port": "out",
+      "to": "out-streaming",
+      "input": "in"
+    },
+    {
+      "from": "sort",
+      "port": "broadcast",
+      "to": "paint-broadcast",
+      "input": "in"
+    },
+    {
+      "from": "paint-broadcast",
+      "port": "out",
+      "to": "out-broadcast",
+      "input": "in"
+    },
+    {
+      "from": "sort",
+      "port": "low_latency",
+      "to": "paint-low_latency",
+      "input": "in"
+    },
+    {
+      "from": "paint-low_latency",
+      "port": "out",
+      "to": "out-low_latency",
+      "input": "in"
+    },
+    {
+      "from": "sort",
+      "port": "oam",
+      "to": "paint-oam",
+      "input": "in"
+    },
+    {
+      "from": "paint-oam",
+      "port": "out",
+      "to": "out-oam",
+      "input": "in"
+    },
+    {
+      "from": "sort",
+      "port": "high_throughput",
+      "to": "paint-high_throughput",
+      "input": "in"
+    },
+    {
+      "from": "paint-high_throughput",
+      "port": "out",
+      "to": "out-high_throughput",
+      "input": "in"
+    },
+    {
+      "from": "sort",
+      "port": "default",
+      "to": "paint-standard",
+      "input": "in"
+    },
+    {
+      "from": "paint-standard",
+      "port": "out",
+      "to": "out-standard",
+      "input": "in"
+    }
+  ]
+}

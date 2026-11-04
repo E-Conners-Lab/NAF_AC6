@@ -1,0 +1,98 @@
+{
+  "meta": null,
+  "ttl_ms": 0,
+  "cache_scope": "private",
+  "next_cursor": null,
+  "tools": [
+    {
+      "name": "get_rfc",
+      "title": null,
+      "description": "Fetch an RFC document by its number",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "number": {
+            "type": "string",
+            "description": "RFC number (e.g. \"2616\")"
+          },
+          "format": {
+            "type": "string",
+            "description": "Output format (full, metadata, sections)",
+            "enum": [
+              "full",
+              "metadata",
+              "sections"
+            ],
+            "default": "full"
+          }
+        },
+        "required": [
+          "number"
+        ],
+        "additionalProperties": false
+      },
+      "execution": null,
+      "output_schema": null,
+      "icons": null,
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "name": "search_rfcs",
+      "title": null,
+      "description": "Search for RFCs by keyword",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "Search keyword or phrase"
+          },
+          "limit": {
+            "type": "number",
+            "description": "Maximum number of results to return",
+            "default": 10
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "additionalProperties": false
+      },
+      "execution": null,
+      "output_schema": null,
+      "icons": null,
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "name": "get_rfc_section",
+      "title": null,
+      "description": "Get a specific section from an RFC",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "number": {
+            "type": "string",
+            "description": "RFC number (e.g. \"2616\")"
+          },
+          "section": {
+            "type": "string",
+            "description": "Section title or number to retrieve"
+          }
+        },
+        "required": [
+          "number",
+          "section"
+        ],
+        "additionalProperties": false
+      },
+      "execution": null,
+      "output_schema": null,
+      "icons": null,
+      "annotations": null,
+      "meta": null
+    }
+  ],
+  "result_type": "complete"
+}

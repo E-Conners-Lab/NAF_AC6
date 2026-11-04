@@ -1,0 +1,20 @@
+{
+  "tool": "built-in ChatGPT image_gen",
+  "model": "not exposed by tool",
+  "date": "2026-11-04",
+  "source_path": "/Users/john.capobianco/.codex/generated_images/01a1a7db-fffe-7360-b293-f4f5ef2ad922/exec-091849c0-6254-49be-b7bd-d1d8b52be4e2.png",
+  "requested_size": [
+    1024,
+    1024
+  ],
+  "actual_size": [
+    1254,
+    1254
+  ],
+  "mode": "RGB",
+  "sha256": "2520018fcbfd5b572d004a90bfba1fa2086c30c93e9aec349d31230b910bd3d8",
+  "decoded": true,
+  "human_approval": "not requested: disposable technical smoke image",
+  "passed": true,
+  "smoke_deleted": true
+}

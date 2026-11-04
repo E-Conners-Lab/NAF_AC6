@@ -1,0 +1,722 @@
+{
+  "schemaVersion": 1,
+  "models": [
+    {
+      "id": "phw_floor_tile",
+      "path": "assets/models/phw_floor_tile.glb",
+      "generator": "Blender 5.2.1 LTS through mcp-for-blender 2.2.7",
+      "script": "assets/src/blender/phw_floor_tile.py",
+      "shared_recipe": "assets/src/blender/common.py",
+      "blend": "assets/src/blender/phw_floor_tile.blend",
+      "review_sheet": "research/assets/phw_floor_tile-angles-0.png",
+      "mcp_build_record": "research/assets/phw_floor_tile-build.json",
+      "mcp_review_record": "research/assets/phw_floor_tile-look.json",
+      "created_on": "2026-11-04T19:44:13.276950+00:00",
+      "sha256": "fab746e39e9734d59e6fadfa4507f274ffa0e74f75526ed118f1e0bb058bfd77",
+      "bytes": 5804,
+      "triangles": 44,
+      "triangle_budget": 300,
+      "nodes": [
+        "body",
+        "phw_floor_tile"
+      ],
+      "license": "Original procedural project asset; no third-party model or texture",
+      "human_review": {
+        "status": "approved",
+        "approver": "Project owner (user)",
+        "date": "2026-11-04",
+        "evidence": "all models all things approved it looks so good so far if not a bit too hard could probably use a splash screen type introduction to the whole topic this is very hard"
+      }
+    },
+    {
+      "id": "phw_belt_straight",
+      "path": "assets/models/phw_belt_straight.glb",
+      "generator": "Blender 5.2.1 LTS through mcp-for-blender 2.2.7",
+      "script": "assets/src/blender/phw_belt_straight.py",
+      "shared_recipe": "assets/src/blender/common.py",
+      "blend": "assets/src/blender/phw_belt_straight.blend",
+      "review_sheet": "research/assets/phw_belt_straight-angles-0.png",
+      "mcp_build_record": "research/assets/phw_belt_straight-build.json",
+      "mcp_review_record": "research/assets/phw_belt_straight-look.json",
+      "created_on": "2026-11-04T19:44:13.277204+00:00",
+      "sha256": "75685f1fc55ebda5c494fa0264ecabedce30012b539517e1df43dd1c53b99c5a",
+      "bytes": 13680,
+      "triangles": 128,
+      "triangle_budget": 300,
+      "nodes": [
+        "body",
+        "phw_belt_straight"
+      ],
+      "license": "Original procedural project asset; no third-party model or texture",
+      "human_review": {
+        "status": "approved",
+        "approver": "Project owner (user)",
+        "date": "2026-11-04",
+        "evidence": "all models all things approved it looks so good so far if not a bit too hard could probably use a splash screen type introduction to the whole topic this is very hard"
+      }
+    },
+    {
+      "id": "phw_belt_corner",
+      "path": "assets/models/phw_belt_corner.glb",
+      "generator": "Blender 5.2.1 LTS through mcp-for-blender 2.2.7",
+      "script": "assets/src/blender/phw_belt_corner.py",
+      "shared_recipe": "assets/src/blender/common.py",
+      "blend": "assets/src/blender/phw_belt_corner.blend",
+      "review_sheet": "research/assets/phw_belt_corner-angles-0.png",
+      "mcp_build_record": "research/assets/phw_belt_corner-build.json",
+      "mcp_review_record": "research/assets/phw_belt_corner-look.json",
+      "created_on": "2026-11-04T19:44:13.277287+00:00",
+      "sha256": "7b32d6a48bd3c95519f373b572915a551a46e939a2896dc23b50370e99c74703",
+      "bytes": 12552,
+      "triangles": 116,
+      "triangle_budget": 300,
+      "nodes": [
+        "body",
+        "phw_belt_corner"
+      ],
+      "license": "Original procedural project asset; no third-party model or texture",
+      "human_review": {
+        "status": "approved",
+        "approver": "Project owner (user)",
+        "date": "2026-11-04",
+        "evidence": "all models all things approved it looks so good so far if not a bit too hard could probably use a splash screen type introduction to the whole topic this is very hard"
+      }
+    },
+    {
+      "id": "phw_buffer_belt",
+      "path": "assets/models/phw_buffer_belt.glb",
+      "generator": "Blender 5.2.1 LTS through mcp-for-blender 2.2.7",
+      "script": "assets/src/blender/phw_buffer_belt.py",
+      "shared_recipe": "assets/src/blender/common.py",
+      "blend": "assets/src/blender/phw_buffer_belt.blend",
+      "review_sheet": "research/assets/phw_buffer_belt-angles-0.png",
+      "mcp_build_record": "research/assets/phw_buffer_belt-build.json",
+      "mcp_review_record": "research/assets/phw_buffer_belt-look.json",
+      "created_on": "2026-11-04T19:44:13.277385+00:00",
+      "sha256": "8df1910a8530ceb0b9019446186fe4a326513d60d8a022da065b3b2bbc60d42e",
+      "bytes": 48492,
+      "triangles": 440,
+      "triangle_budget": 1500,
+      "nodes": [
+        "body",
+        "fill_marker",
+        "threshold_max",
+        "threshold_min",
+        "phw_buffer_belt"
+      ],
+      "license": "Original procedural project asset; no third-party model or texture",
+      "human_review": {
+        "status": "approved",
+        "approver": "Project owner (user)",
+        "date": "2026-11-04",
+        "evidence": "all models all things approved it looks so good so far if not a bit too hard could probably use a splash screen type introduction to the whole topic this is very hard"
+      }
+    },
+    {
+      "id": "phw_sorter",
+      "path": "assets/models/phw_sorter.glb",
+      "generator": "Blender 5.2.1 LTS through mcp-for-blender 2.2.7",
+      "script": "assets/src/blender/phw_sorter.py",
+      "shared_recipe": "assets/src/blender/common.py",
+      "blend": "assets/src/blender/phw_sorter.blend",
+      "review_sheet": "research/assets/phw_sorter-angles-0.png",
+      "mcp_build_record": "research/assets/phw_sorter-build.json",
+      "mcp_review_record": "research/assets/phw_sorter-look.json",
+      "created_on": "2026-11-04T19:44:13.277478+00:00",
+      "sha256": "abf2c649fa77462b807023c8ce90c2e690d46f2d92c6ebff5b5b993d63bc2620",
+      "bytes": 37136,
+      "triangles": 352,
+      "triangle_budget": 4000,
+      "nodes": [
+        "body",
+        "flap",
+        "phw_sorter"
+      ],
+      "license": "Original procedural project asset; no third-party model or texture",
+      "human_review": {
+        "status": "approved",
+        "approver": "Project owner (user)",
+        "date": "2026-11-04",
+        "evidence": "all models all things approved it looks so good so far if not a bit too hard could probably use a splash screen type introduction to the whole topic this is very hard"
+      }
+    },
+    {
+      "id": "phw_paint_booth",
+      "path": "assets/models/phw_paint_booth.glb",
+      "generator": "Blender 5.2.1 LTS through mcp-for-blender 2.2.7",
+      "script": "assets/src/blender/phw_paint_booth.py",
+      "shared_recipe": "assets/src/blender/common.py",
+      "blend": "assets/src/blender/phw_paint_booth.blend",
+      "review_sheet": "research/assets/phw_paint_booth-angles-0.png",
+      "mcp_build_record": "research/assets/phw_paint_booth-build.json",
+      "mcp_review_record": "research/assets/phw_paint_booth-look.json",
+      "created_on": "2026-11-04T19:44:13.277571+00:00",
+      "sha256": "d9006c515b1c2e3c630ae3168381becd0ed015d1d7590c50349f98a0b932df30",
+      "bytes": 35924,
+      "triangles": 336,
+      "triangle_budget": 4000,
+      "nodes": [
+        "body",
+        "nozzle",
+        "spray",
+        "phw_paint_booth"
+      ],
+      "license": "Original procedural project asset; no third-party model or texture",
+      "human_review": {
+        "status": "approved",
+        "approver": "Project owner (user)",
+        "date": "2026-11-04",
+        "evidence": "all models all things approved it looks so good so far if not a bit too hard could probably use a splash screen type introduction to the whole topic this is very hard"
+      }
+    },
+    {
+      "id": "phw_tank_single",
+      "path": "assets/models/phw_tank_single.glb",
+      "generator": "Blender 5.2.1 LTS through mcp-for-blender 2.2.7",
+      "script": "assets/src/blender/phw_tank_single.py",
+      "shared_recipe": "assets/src/blender/common.py",
+      "blend": "assets/src/blender/phw_tank_single.blend",
+      "review_sheet": "research/assets/phw_tank_single-angles-0.png",
+      "mcp_build_record": "research/assets/phw_tank_single-build.json",
+      "mcp_review_record": "research/assets/phw_tank_single-look.json",
+      "created_on": "2026-11-04T19:44:13.277650+00:00",
+      "sha256": "7682a7d4f1273a4a9909e605ba48ac2147e8198fce1035a403aa73983f58bb7b",
+      "bytes": 30572,
+      "triangles": 312,
+      "triangle_budget": 3000,
+      "nodes": [
+        "body",
+        "water",
+        "phw_tank_single"
+      ],
+      "license": "Original procedural project asset; no third-party model or texture",
+      "human_review": {
+        "status": "approved",
+        "approver": "Project owner (user)",
+        "date": "2026-11-04",
+        "evidence": "all models all things approved it looks so good so far if not a bit too hard could probably use a splash screen type introduction to the whole topic this is very hard"
+      }
+    },
+    {
+      "id": "phw_tank_cascade",
+      "path": "assets/models/phw_tank_cascade.glb",
+      "generator": "Blender 5.2.1 LTS through mcp-for-blender 2.2.7",
+      "script": "assets/src/blender/phw_tank_cascade.py",
+      "shared_recipe": "assets/src/blender/common.py",
+      "blend": "assets/src/blender/phw_tank_cascade.blend",
+      "review_sheet": "research/assets/phw_tank_cascade-angles-0.png",
+      "mcp_build_record": "research/assets/phw_tank_cascade-build.json",
+      "mcp_review_record": "research/assets/phw_tank_cascade-look.json",
+      "created_on": "2026-11-04T19:44:13.277741+00:00",
+      "sha256": "7105b45aca170ec7194851ce83b3038356abbd6538e61046ecef9f223ae6ba55",
+      "bytes": 56004,
+      "triangles": 580,
+      "triangle_budget": 5000,
+      "nodes": [
+        "body",
+        "overflow_spout",
+        "water_committed",
+        "water_excess",
+        "phw_tank_cascade"
+      ],
+      "license": "Original procedural project asset; no third-party model or texture",
+      "human_review": {
+        "status": "approved",
+        "approver": "Project owner (user)",
+        "date": "2026-11-04",
+        "evidence": "all models all things approved it looks so good so far if not a bit too hard could probably use a splash screen type introduction to the whole topic this is very hard"
+      }
+    },
+    {
+      "id": "phw_tank_twin",
+      "path": "assets/models/phw_tank_twin.glb",
+      "generator": "Blender 5.2.1 LTS through mcp-for-blender 2.2.7",
+      "script": "assets/src/blender/phw_tank_twin.py",
+      "shared_recipe": "assets/src/blender/common.py",
+      "blend": "assets/src/blender/phw_tank_twin.blend",
+      "review_sheet": "research/assets/phw_tank_twin-angles-0.png",
+      "mcp_build_record": "research/assets/phw_tank_twin-build.json",
+      "mcp_review_record": "research/assets/phw_tank_twin-look.json",
+      "created_on": "2026-11-04T19:44:13.277849+00:00",
+      "sha256": "035e133d251876f05e0ed22ddd7375e72f3fc88def1a01ff7e36e2569a46e6fa",
+      "bytes": 51644,
+      "triangles": 548,
+      "triangle_budget": 5000,
+      "nodes": [
+        "body",
+        "water_committed",
+        "water_peak",
+        "phw_tank_twin"
+      ],
+      "license": "Original procedural project asset; no third-party model or texture",
+      "human_review": {
+        "status": "approved",
+        "approver": "Project owner (user)",
+        "date": "2026-11-04",
+        "evidence": "all models all things approved it looks so good so far if not a bit too hard could probably use a splash screen type introduction to the whole topic this is very hard"
+      }
+    },
+    {
+      "id": "phw_recycler",
+      "path": "assets/models/phw_recycler.glb",
+      "generator": "Blender 5.2.1 LTS through mcp-for-blender 2.2.7",
+      "script": "assets/src/blender/phw_recycler.py",
+      "shared_recipe": "assets/src/blender/common.py",
+      "blend": "assets/src/blender/phw_recycler.blend",
+      "review_sheet": "research/assets/phw_recycler-angles-0.png",
+      "mcp_build_record": "research/assets/phw_recycler-build.json",
+      "mcp_review_record": "research/assets/phw_recycler-look.json",
+      "created_on": "2026-11-04T19:44:13.277931+00:00",
+      "sha256": "7193315db87afb5b07674d6ac06a5e7a9a2af1586b97cdaa4376930354bc5c85",
+      "bytes": 33716,
+      "triangles": 308,
+      "triangle_budget": 3000,
+      "nodes": [
+        "body",
+        "hatch",
+        "phw_recycler"
+      ],
+      "license": "Original procedural project asset; no third-party model or texture",
+      "human_review": {
+        "status": "approved",
+        "approver": "Project owner (user)",
+        "date": "2026-11-04",
+        "evidence": "all models all things approved it looks so good so far if not a bit too hard could probably use a splash screen type introduction to the whole topic this is very hard"
+      }
+    },
+    {
+      "id": "phw_priority_merger",
+      "path": "assets/models/phw_priority_merger.glb",
+      "generator": "Blender 5.2.1 LTS through mcp-for-blender 2.2.7",
+      "script": "assets/src/blender/phw_priority_merger.py",
+      "shared_recipe": "assets/src/blender/common.py",
+      "blend": "assets/src/blender/phw_priority_merger.blend",
+      "review_sheet": "research/assets/phw_priority_merger-angles-0.png",
+      "mcp_build_record": "research/assets/phw_priority_merger-build.json",
+      "mcp_review_record": "research/assets/phw_priority_merger-look.json",
+      "created_on": "2026-11-04T19:44:13.278014+00:00",
+      "sha256": "81b0e4d355d40587a064527267ad966e667c33fe104e8126332cde3292f307fb",
+      "bytes": 38876,
+      "triangles": 352,
+      "triangle_budget": 5000,
+      "nodes": [
+        "body",
+        "gate_priority",
+        "gate_weighted",
+        "phw_priority_merger"
+      ],
+      "license": "Original procedural project asset; no third-party model or texture",
+      "human_review": {
+        "status": "approved",
+        "approver": "Project owner (user)",
+        "date": "2026-11-04",
+        "evidence": "all models all things approved it looks so good so far if not a bit too hard could probably use a splash screen type introduction to the whole topic this is very hard"
+      }
+    },
+    {
+      "id": "phw_dock_in",
+      "path": "assets/models/phw_dock_in.glb",
+      "generator": "Blender 5.2.1 LTS through mcp-for-blender 2.2.7",
+      "script": "assets/src/blender/phw_dock_in.py",
+      "shared_recipe": "assets/src/blender/common.py",
+      "blend": "assets/src/blender/phw_dock_in.blend",
+      "review_sheet": "research/assets/phw_dock_in-angles-0.png",
+      "mcp_build_record": "research/assets/phw_dock_in-build.json",
+      "mcp_review_record": "research/assets/phw_dock_in-look.json",
+      "created_on": "2026-11-04T19:44:13.278092+00:00",
+      "sha256": "35b1501504f858580a915ff4b6dafed26f03e351f1288886ca1ec8e82108ff0a",
+      "bytes": 38216,
+      "triangles": 352,
+      "triangle_budget": 3000,
+      "nodes": [
+        "body",
+        "door",
+        "phw_dock_in"
+      ],
+      "license": "Original procedural project asset; no third-party model or texture",
+      "human_review": {
+        "status": "approved",
+        "approver": "Project owner (user)",
+        "date": "2026-11-04",
+        "evidence": "all models all things approved it looks so good so far if not a bit too hard could probably use a splash screen type introduction to the whole topic this is very hard"
+      }
+    },
+    {
+      "id": "phw_dock_out",
+      "path": "assets/models/phw_dock_out.glb",
+      "generator": "Blender 5.2.1 LTS through mcp-for-blender 2.2.7",
+      "script": "assets/src/blender/phw_dock_out.py",
+      "shared_recipe": "assets/src/blender/common.py",
+      "blend": "assets/src/blender/phw_dock_out.blend",
+      "review_sheet": "research/assets/phw_dock_out-angles-0.png",
+      "mcp_build_record": "research/assets/phw_dock_out-build.json",
+      "mcp_review_record": "research/assets/phw_dock_out-look.json",
+      "created_on": "2026-11-04T19:44:13.278169+00:00",
+      "sha256": "c523b51f682221e7f5d1609926a2ab6c947ab544dfc1ac3b876feaaad1a424ef",
+      "bytes": 38216,
+      "triangles": 352,
+      "triangle_budget": 3000,
+      "nodes": [
+        "body",
+        "door",
+        "phw_dock_out"
+      ],
+      "license": "Original procedural project asset; no third-party model or texture",
+      "human_review": {
+        "status": "approved",
+        "approver": "Project owner (user)",
+        "date": "2026-11-04",
+        "evidence": "all models all things approved it looks so good so far if not a bit too hard could probably use a splash screen type introduction to the whole topic this is very hard"
+      }
+    },
+    {
+      "id": "phw_crate_s",
+      "path": "assets/models/phw_crate_s.glb",
+      "generator": "Blender 5.2.1 LTS through mcp-for-blender 2.2.7",
+      "script": "assets/src/blender/phw_crate_s.py",
+      "shared_recipe": "assets/src/blender/common.py",
+      "blend": "assets/src/blender/phw_crate_s.blend",
+      "review_sheet": "research/assets/phw_crate_s-angles-0.png",
+      "mcp_build_record": "research/assets/phw_crate_s-build.json",
+      "mcp_review_record": "research/assets/phw_crate_s-look.json",
+      "created_on": "2026-11-04T19:44:13.278246+00:00",
+      "sha256": "82840f771ab9227c6288fe536bccbcedff387b1d583b5323d92aac900a5206d6",
+      "bytes": 20040,
+      "triangles": 176,
+      "triangle_budget": 400,
+      "nodes": [
+        "bit_0",
+        "bit_1",
+        "bit_2",
+        "bit_3",
+        "bit_4",
+        "bit_5",
+        "bit_6",
+        "bit_7",
+        "body",
+        "phw_crate_s"
+      ],
+      "license": "Original procedural project asset; no third-party model or texture",
+      "human_review": {
+        "status": "approved",
+        "approver": "Project owner (user)",
+        "date": "2026-11-04",
+        "evidence": "all models all things approved it looks so good so far if not a bit too hard could probably use a splash screen type introduction to the whole topic this is very hard"
+      }
+    },
+    {
+      "id": "phw_crate_m",
+      "path": "assets/models/phw_crate_m.glb",
+      "generator": "Blender 5.2.1 LTS through mcp-for-blender 2.2.7",
+      "script": "assets/src/blender/phw_crate_m.py",
+      "shared_recipe": "assets/src/blender/common.py",
+      "blend": "assets/src/blender/phw_crate_m.blend",
+      "review_sheet": "research/assets/phw_crate_m-angles-0.png",
+      "mcp_build_record": "research/assets/phw_crate_m-build.json",
+      "mcp_review_record": "research/assets/phw_crate_m-look.json",
+      "created_on": "2026-11-04T19:44:13.278318+00:00",
+      "sha256": "a94e1e1a308b62886c93d7fbb5e20f55cf5d8b6083bb15233c9043b5877094e4",
+      "bytes": 19900,
+      "triangles": 176,
+      "triangle_budget": 400,
+      "nodes": [
+        "bit_0",
+        "bit_1",
+        "bit_2",
+        "bit_3",
+        "bit_4",
+        "bit_5",
+        "bit_6",
+        "bit_7",
+        "body",
+        "phw_crate_m"
+      ],
+      "license": "Original procedural project asset; no third-party model or texture",
+      "human_review": {
+        "status": "approved",
+        "approver": "Project owner (user)",
+        "date": "2026-11-04",
+        "evidence": "all models all things approved it looks so good so far if not a bit too hard could probably use a splash screen type introduction to the whole topic this is very hard"
+      }
+    },
+    {
+      "id": "phw_crate_l",
+      "path": "assets/models/phw_crate_l.glb",
+      "generator": "Blender 5.2.1 LTS through mcp-for-blender 2.2.7",
+      "script": "assets/src/blender/phw_crate_l.py",
+      "shared_recipe": "assets/src/blender/common.py",
+      "blend": "assets/src/blender/phw_crate_l.blend",
+      "review_sheet": "research/assets/phw_crate_l-angles-0.png",
+      "mcp_build_record": "research/assets/phw_crate_l-build.json",
+      "mcp_review_record": "research/assets/phw_crate_l-look.json",
+      "created_on": "2026-11-04T19:44:13.278386+00:00",
+      "sha256": "91ec5cf6468a7e27426a4f6585bb0f5c46d2c0c6696dc9081400d9904b79f06e",
+      "bytes": 20028,
+      "triangles": 176,
+      "triangle_budget": 400,
+      "nodes": [
+        "bit_0",
+        "bit_1",
+        "bit_2",
+        "bit_3",
+        "bit_4",
+        "bit_5",
+        "bit_6",
+        "bit_7",
+        "body",
+        "phw_crate_l"
+      ],
+      "license": "Original procedural project asset; no third-party model or texture",
+      "human_review": {
+        "status": "approved",
+        "approver": "Project owner (user)",
+        "date": "2026-11-04",
+        "evidence": "all models all things approved it looks so good so far if not a bit too hard could probably use a splash screen type introduction to the whole topic this is very hard"
+      }
+    },
+    {
+      "id": "phw_hall",
+      "path": "assets/models/phw_hall.glb",
+      "generator": "Blender 5.2.1 LTS through mcp-for-blender 2.2.7",
+      "script": "assets/src/blender/phw_hall.py",
+      "shared_recipe": "assets/src/blender/common.py",
+      "blend": "assets/src/blender/phw_hall.blend",
+      "review_sheet": "research/assets/phw_hall-angles-0.png",
+      "mcp_build_record": "research/assets/phw_hall-build.json",
+      "mcp_review_record": "research/assets/phw_hall-look.json",
+      "created_on": "2026-11-04T19:44:13.278469+00:00",
+      "sha256": "2930479c3f33b970306e509bdba6d22fc816b2e2883c44d3d8709538d67a512f",
+      "bytes": 157264,
+      "triangles": 1532,
+      "triangle_budget": 20000,
+      "nodes": [
+        "body",
+        "phw_hall"
+      ],
+      "license": "Original procedural project asset; no third-party model or texture",
+      "human_review": {
+        "status": "approved",
+        "approver": "Project owner (user)",
+        "date": "2026-11-04",
+        "evidence": "all models all things approved it looks so good so far if not a bit too hard could probably use a splash screen type introduction to the whole topic this is very hard"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "title",
+      "path": "assets/images/title.webp",
+      "prompt": "assets/prompts/title.json",
+      "generator": "ChatGPT built-in image_gen",
+      "model": "not exposed by tool",
+      "source_generated_path": "/Users/john.capobianco/.codex/generated_images/01a1a7db-fffe-7360-b293-f4f5ef2ad922/exec-b7f21c59-f22e-4007-864e-cd57a23384ba.png",
+      "created_on": "2026-11-04",
+      "reference": null,
+      "width": 1672,
+      "height": 941,
+      "bytes": 123008,
+      "sha256": "1c0d2eaf77fe29945e62c92805ff01caacb7004f3641c795fcc74f0383b2e9ba",
+      "license": "Original AI-generated project art; no third-party source image",
+      "review": {
+        "reviewer": "Codex visual inspection under owner continuing authorization",
+        "status": "accepted",
+        "text_digits_glyphs": "none observed",
+        "note": "Decorative art; teaching diagrams and exact bit states are generated from data."
+      }
+    },
+    {
+      "id": "act-1",
+      "path": "assets/images/act-1.webp",
+      "prompt": "assets/prompts/act-1.json",
+      "generator": "ChatGPT built-in image_gen",
+      "model": "not exposed by tool",
+      "source_generated_path": "/Users/john.capobianco/.codex/generated_images/01a1a7db-fffe-7360-b293-f4f5ef2ad922/exec-93a4817a-6af4-42da-b0df-4f8695d51aa8.png",
+      "created_on": "2026-11-04",
+      "reference": "assets/images/title.webp",
+      "width": 1672,
+      "height": 941,
+      "bytes": 84322,
+      "sha256": "6622b9dfdfc93be05e8ce16616f64af86cdf1f9cace2919f983e13ea894a0326",
+      "license": "Original AI-generated project art; no third-party source image",
+      "review": {
+        "reviewer": "Codex visual inspection under owner continuing authorization",
+        "status": "accepted",
+        "text_digits_glyphs": "none observed",
+        "note": "Decorative art; teaching diagrams and exact bit states are generated from data."
+      }
+    },
+    {
+      "id": "act-2",
+      "path": "assets/images/act-2.webp",
+      "prompt": "assets/prompts/act-2.json",
+      "generator": "ChatGPT built-in image_gen",
+      "model": "not exposed by tool",
+      "source_generated_path": "/Users/john.capobianco/.codex/generated_images/01a1a7db-fffe-7360-b293-f4f5ef2ad922/exec-624c4e79-68f5-47fd-a224-01459e36017b.png",
+      "created_on": "2026-11-04",
+      "reference": "assets/images/title.webp",
+      "width": 1672,
+      "height": 941,
+      "bytes": 101186,
+      "sha256": "36326101fdfc1350cd1c9e40579add547c89c46a8aec3b322616c2c675521e2b",
+      "license": "Original AI-generated project art; no third-party source image",
+      "review": {
+        "reviewer": "Codex visual inspection under owner continuing authorization",
+        "status": "accepted",
+        "text_digits_glyphs": "none observed",
+        "note": "Decorative art; teaching diagrams and exact bit states are generated from data."
+      }
+    },
+    {
+      "id": "act-3",
+      "path": "assets/images/act-3.webp",
+      "prompt": "assets/prompts/act-3.json",
+      "generator": "ChatGPT built-in image_gen",
+      "model": "not exposed by tool",
+      "source_generated_path": "/Users/john.capobianco/.codex/generated_images/01a1a7db-fffe-7360-b293-f4f5ef2ad922/exec-aecc45e8-f9bb-43c3-960a-83b381c4a22c.png",
+      "created_on": "2026-11-04",
+      "reference": "assets/images/title.webp",
+      "width": 1672,
+      "height": 941,
+      "bytes": 158956,
+      "sha256": "9ec8a989b18918ccfa9724c3f2e685f0910f09678a206e0261265c880d6c1f4d",
+      "license": "Original AI-generated project art; no third-party source image",
+      "review": {
+        "reviewer": "Codex visual inspection under owner continuing authorization",
+        "status": "accepted",
+        "text_digits_glyphs": "none observed",
+        "note": "Decorative art; teaching diagrams and exact bit states are generated from data."
+      }
+    },
+    {
+      "id": "briefing-1",
+      "path": "assets/images/briefing-1.webp",
+      "prompt": "assets/prompts/briefing-1.json",
+      "generator": "ChatGPT built-in image_gen",
+      "model": "not exposed by tool",
+      "source_generated_path": "/Users/john.capobianco/.codex/generated_images/01a1a7db-fffe-7360-b293-f4f5ef2ad922/exec-7f298bf1-54b1-4661-9771-1cbcdb0528fa.png",
+      "created_on": "2026-11-04",
+      "reference": "assets/images/title.webp",
+      "width": 1672,
+      "height": 941,
+      "bytes": 61188,
+      "sha256": "1ea847939bd4ab209ec058db213e784e9a51a58258d13034eb09160b62dfe12f",
+      "license": "Original AI-generated project art; no third-party source image",
+      "review": {
+        "reviewer": "Codex visual inspection under owner continuing authorization",
+        "status": "accepted",
+        "text_digits_glyphs": "none observed",
+        "note": "Decorative art; teaching diagrams and exact bit states are generated from data."
+      }
+    },
+    {
+      "id": "briefing-2",
+      "path": "assets/images/briefing-2.webp",
+      "prompt": "assets/prompts/briefing-2.json",
+      "generator": "ChatGPT built-in image_gen",
+      "model": "not exposed by tool",
+      "source_generated_path": "/Users/john.capobianco/.codex/generated_images/01a1a7db-fffe-7360-b293-f4f5ef2ad922/exec-a950c6f3-405e-4ad4-8465-edfc0a5b561f.png",
+      "created_on": "2026-11-04",
+      "reference": "assets/images/title.webp",
+      "width": 1672,
+      "height": 941,
+      "bytes": 65134,
+      "sha256": "021ef18311605d82819d16b172e886222a9094df117e8876683d291dcd72af15",
+      "license": "Original AI-generated project art; no third-party source image",
+      "review": {
+        "reviewer": "Codex visual inspection under owner continuing authorization",
+        "status": "accepted",
+        "text_digits_glyphs": "none observed",
+        "note": "Decorative art; teaching diagrams and exact bit states are generated from data."
+      }
+    },
+    {
+      "id": "briefing-3",
+      "path": "assets/images/briefing-3.webp",
+      "prompt": "assets/prompts/briefing-3.json",
+      "generator": "ChatGPT built-in image_gen",
+      "model": "not exposed by tool",
+      "source_generated_path": "/Users/john.capobianco/.codex/generated_images/01a1a7db-fffe-7360-b293-f4f5ef2ad922/exec-c14a1597-2107-455e-9709-6a467bb0111b.png",
+      "created_on": "2026-11-04",
+      "reference": "assets/images/title.webp",
+      "width": 1672,
+      "height": 941,
+      "bytes": 87238,
+      "sha256": "439f2bbffee145ad60bb3acb06e5fa921777cef412ed62841e72b317442fefea",
+      "license": "Original AI-generated project art; no third-party source image",
+      "review": {
+        "reviewer": "Codex visual inspection under owner continuing authorization",
+        "status": "accepted",
+        "text_digits_glyphs": "none observed",
+        "note": "Decorative art; teaching diagrams and exact bit states are generated from data."
+      }
+    },
+    {
+      "id": "icon",
+      "path": "assets/images/icon.webp",
+      "prompt": "assets/prompts/icon.json",
+      "generator": "ChatGPT built-in image_gen",
+      "model": "not exposed by tool",
+      "source_generated_path": "/Users/john.capobianco/.codex/generated_images/01a1a7db-fffe-7360-b293-f4f5ef2ad922/exec-0ce6d160-f5e8-41a8-85ce-0055392471ad.png",
+      "created_on": "2026-11-04",
+      "reference": "assets/images/title.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 35632,
+      "sha256": "6bb5cb21f83a556c5b895c3ebf82f69a4894954c843177c21036ce2acba64556",
+      "license": "Original AI-generated project art; no third-party source image",
+      "review": {
+        "reviewer": "Codex visual inspection under owner continuing authorization",
+        "status": "accepted",
+        "text_digits_glyphs": "none observed",
+        "note": "Decorative art; teaching diagrams and exact bit states are generated from data."
+      }
+    },
+    {
+      "id": "hall-backdrop",
+      "path": "assets/images/hall-backdrop.webp",
+      "prompt": "assets/prompts/hall-backdrop.json",
+      "generator": "ChatGPT built-in image_gen",
+      "model": "not exposed by tool",
+      "source_generated_path": "/Users/john.capobianco/.codex/generated_images/01a1a7db-fffe-7360-b293-f4f5ef2ad922/exec-df2b78f0-45f7-47b9-9805-d8ff894605f0.png",
+      "created_on": "2026-11-04",
+      "reference": "assets/images/title.webp",
+      "width": 1672,
+      "height": 941,
+      "bytes": 159352,
+      "sha256": "09c3bdab67d66e6bd1ba865e7126021e9e1532fb779e6649a7515e7ee6f794e5",
+      "license": "Original AI-generated project art; no third-party source image",
+      "review": {
+        "reviewer": "Codex visual inspection under owner continuing authorization",
+        "status": "accepted",
+        "text_digits_glyphs": "none observed",
+        "note": "Decorative art; teaching diagrams and exact bit states are generated from data."
+      }
+    },
+    {
+      "id": "loading",
+      "path": "assets/images/loading.webp",
+      "prompt": "assets/prompts/loading.json",
+      "generator": "ChatGPT built-in image_gen",
+      "model": "not exposed by tool",
+      "source_generated_path": "/Users/john.capobianco/.codex/generated_images/01a1a7db-fffe-7360-b293-f4f5ef2ad922/exec-42e98478-a32a-4ce9-8fcd-f66c6d861a4a.png",
+      "created_on": "2026-11-04",
+      "reference": "assets/images/title.webp",
+      "width": 1672,
+      "height": 941,
+      "bytes": 119662,
+      "sha256": "fb5da5fb3ff53fc48836679163832146ae7ebb4e34c0760ef530b701e0566255",
+      "license": "Original AI-generated project art; no third-party source image",
+      "review": {
+        "reviewer": "Codex visual inspection under owner continuing authorization",
+        "status": "accepted",
+        "text_digits_glyphs": "none observed",
+        "note": "Decorative art; teaching diagrams and exact bit states are generated from data."
+      }
+    }
+  ],
+  "continuing_authorization": {
+    "date": "2026-11-04",
+    "quote": "all models all things approved it looks so good so far if not a bit too hard could probably use a splash screen type introduction to the whole topic this is very hard",
+    "scope": "Owner approved all models and remaining work. Later assets receive recorded assistant inspection under this authorization, without claiming the owner viewed an uncreated artifact."
+  }
+}

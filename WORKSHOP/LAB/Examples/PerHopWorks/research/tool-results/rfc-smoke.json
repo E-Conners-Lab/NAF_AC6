@@ -1,0 +1,68 @@
+[
+  {
+    "time": "2026-11-04T19:06:10.063818+00:00",
+    "tool": "get_rfc",
+    "arguments": {
+      "number": "2474",
+      "format": "metadata"
+    },
+    "result": {
+      "meta": null,
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"number\": \"2474\",\n  \"title\": \"RFC\u00a02474:      Definition of the Differentiated Services Field (DS Field) in the IPv4 and IPv6 Headers\",\n  \"authors\": [],\n  \"date\": \"\",\n  \"status\": \"Standards Track                Torrent Networking Technologies\",\n  \"abstract\": \"\",\n  \"url\": \"https://www.ietf.org/rfc/rfc2474/\",\n  \"compatibility_patch\": \"perhop-html-anchors-v1\"\n}",
+          "annotations": null,
+          "meta": null
+        }
+      ],
+      "structured_content": null,
+      "is_error": false,
+      "result_type": "complete"
+    }
+  },
+  {
+    "time": "2026-11-04T19:06:11.244384+00:00",
+    "tool": "get_rfc_section",
+    "arguments": {
+      "number": "4594",
+      "section": "4.3"
+    },
+    "result": {
+      "meta": null,
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"title\": \"1.4.3.  Traffic Conditioning\",\n  \"number\": \"1.4.3\",\n  \"content\": \"1.4.3.  Traffic Conditioning\\n\\n   In addition, at the first router in a network that a packet crosses,\\n   arriving traffic may be measured and dropped or marked according to a\\n   policy, or perhaps shaped on network ingress, as in \\\"A Rate Adaptive\\n   Shaper for Differentiated Services\\\" [RFC2963].  This may be used to\\n   bias feedback loops, as is done in \\\"Assured Forwarding PHB\\\"\\n   [RFC2597], or to limit the amount of traffic in a system, as is done\\n   in \\\"Expedited Forwarding PHB\\\" [RFC3246].  Such measurement procedures\\n   are collectively referred to as \\\"traffic conditioners\\\".  Traffic\\n   conditioners are normally built using token bucket meters, for\\n   example with a committed rate and burst size, as in Section 1.5.3 of\\n   the DiffServ Model [RFC3290].  The Assured Forwarding PHB [RFC2597]\\n   uses a variation on a meter with multiple rate and burst size\\n   measurements to test and identify multiple levels of conformance.\\n\\n\\n\\nBabiarz, et al.              Informational                      [Page 7]\\n\\nRFC 4594        Guidelines for DiffServ Service Classes      August 2006\\n\\n\\n   Multiple rates and burst sizes can be realized using multiple levels\\n   of token buckets or more complex token buckets; these are\\n   implementation details.  The following are some traffic conditioners\\n   that may be used in deployment of differentiated services:\\n\\n   o  For Class Selector (CS) PHBs, a single token bucket meter to\\n      provide a rate plus burst size control.\\n   o  For Expedited Forwarding (EF) PHB, a single token bucket meter to\\n      provide a rate plus burst size control.\\n   o  For Assured Forwarding (AF) PHBs, usually two token bucket meters\\n      configured to provide behavior as outlined in \\\"Two Rate Three\\n      Color Marker (trTCM)\\\" [RFC2698] or \\\"Single Rate Three Color Marker\\n      (srTCM)\\\" [RFC2697].  The two-rate, three-color marker is used to\\n      enforce two rates, whereas the single-rate, three-color marker is\\n      used to enforce a committed rate with two burst lengths.\"\n}",
+          "annotations": null,
+          "meta": null
+        }
+      ],
+      "structured_content": null,
+      "is_error": false,
+      "result_type": "complete"
+    }
+  },
+  {
+    "time": "2026-11-04T19:06:11.245743+00:00",
+    "tool": "get_rfc_section",
+    "arguments": {
+      "number": "4594",
+      "section": "Multimedia Conferencing Service Class"
+    },
+    "result": {
+      "meta": null,
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"title\": \"4.3.  Multimedia Conferencing Service Class\",\n  \"number\": \"4.3\",\n  \"content\": \"4.3.  Multimedia Conferencing Service Class\\n\\n   The Multimedia Conferencing service class is RECOMMENDED for\\n   applications that require real-time service for rate-adaptive\\n   traffic.  H.323/V2 and later versions of video conferencing equipment\\n   with dynamic bandwidth adjustment are such applications.  The traffic\\n   sources in this service class have the ability to dynamically change\\n   their transmission rate based on feedback from the receiver.  One\\n   approach used in H.323/V2 equipment is, when the receiver detects a\\n   pre-configured level of packet loss, it signals to the transmitter\\n   the indication of possible on-path congestion.  When available, the\\n   transmitter then selects a lower rate encoding codec.  Note that\\n   today, many H.323/V2 video conferencing solutions implement fixed-\\n   step bandwidth change (usually reducing the rate), traffic resembling\\n   step-wise CBR.\\n\\n   Typical video conferencing configurations negotiate the setup of\\n   multimedia session using protocols such as H.323.  When a user/end-\\n   point has been authorized to start a multimedia session, the\\n   admission procedure should have verified that the newly admitted data\\n   rate will be within the engineered capacity of the Multimedia\\n   Conferencing service class.  The bandwidth in the core network and\\n   the number of simultaneous video conferencing sessions that can be\\n   supported SHOULD be engineered to control traffic load for this\\n   service.\\n\\n   The Multimedia Conferencing service class SHOULD use the Assured\\n   Forwarding (AF) PHB, defined in [RFC2597].  This service class SHOULD\\n   be configured to provide a bandwidth assurance for AF41, AF42, and\\n   AF43 marked packets to ensure that they get forwarded.  The\\n   Multimedia Conferencing service class SHOULD be configured to use a\\n   Rate Queuing system such as that defined in Section 1.4.1.2 of this\\n   document.\\n\\n   The following applications SHOULD use the Multimedia Conferencing\\n   service class:\\n\\n   o  H.323/V2 and later versions of video conferencing applications\\n      (interactive video).\\n\\n\\n\\n\\nBabiarz, et al.              Informational                     [Page 35]\\n\\nRFC 4594        Guidelines for DiffServ Service Classes      August 2006\\n\\n\\n   o  Video conferencing applications with rate control or traffic\\n      content importance marking.\\n   o  Application server-to-application server non-bursty data transfer\\n      requiring very low delay.\\n   o  IP VPN service that specifies two rates and mean network delay\\n      that is slightly longer then network propagation delay.\\n   o  Interactive, time-critical, and mission-critical applications.\\n\\n   The following are traffic characteristics:\\n\\n   o  Variable size packets.\\n   o  The higher the rate, the higher the density of large packets.\\n   o  Constant packet emission time interval.\\n   o  Variable rate.\\n   o  Source is capable of reducing its transmission rate based on\\n      detection of packet loss at the receiver.\\n\\n   Applications or IP end points SHOULD pre-mark their packets with DSCP\\n   values as shown below.  If the end point is not capable of setting\\n   the DSCP value, then the router topologically closest to the end\\n   point SHOULD perform Multifield (MF) Classification, as defined in\\n   [RFC2475] and mark all packets as AF4x.  Note: In this case, the\\n   two-rate, three-color marker will be configured to operate in Color-\\n   Blind mode.\\n\\n   RECOMMENDED DSCP marking when performed by router closest to source:\\n\\n   o  AF41 = up to specified rate \\\"A\\\".\\n   o  AF42 = in excess of specified rate \\\"A\\\" but below specified rate\\n      \\\"B\\\".\\n   o  AF43 = in excess of specified rate \\\"B\\\".\\n   o  Where \\\"A\\\" < \\\"B\\\".\\n\\n   Note: One might expect \\\"A\\\" to approximate the sum of the mean rates\\n   and \\\"B\\\" to approximate the sum of the peak rates.\\n\\n   RECOMMENDED DSCP marking when performed by H.323/V2 video\\n   conferencing equipment:\\n\\n   o  AF41 = H.323 video conferencing audio stream RTP/UDP.\\n   o  AF41 = H.323 video conferencing video control RTCP/TCP.\\n   o  AF41 = H.323 video conferencing video stream up to specified rate\\n      \\\"A\\\".\\n   o  AF42 = H.323 video conferencing video stream in excess of\\n      specified rate \\\"A\\\" but below specified rate \\\"B\\\".\\n   o  AF43 = H.323 video conferencing video stream in excess of\\n      specified rate \\\"B\\\".\\n   o  Where \\\"A\\\" < \\\"B\\\".\\n\\n\\n\\nBabiarz, et al.              Informational                     [Page 36]\\n\\nRFC 4594        Guidelines for DiffServ Service Classes      August 2006\\n\\n\\n   RECOMMENDED conditioning performed at DiffServ network edge:\\n\\n   o  The two-rate, three-color marker SHOULD be configured to provide\\n      the behavior as defined in trTCM [RFC2698].\\n   o  If packets are marked by trusted sources or a previously trusted\\n      DiffServ domain and the color marking is to be preserved, then the\\n      two-rate, three-color marker SHOULD be configured to operate in\\n      Color-Aware mode.\\n   o  If the packet marking is not trusted or the color marking is not\\n      to be preserved, then the two-rate, three-color marker SHOULD be\\n      configured to operate in Color-Blind mode.\\n\\n   The fundamental service offered to \\\"Multimedia Conferencing\\\" traffic\\n   is enhanced best-effort service with controlled rate and delay.  For\\n   video conferencing service, typically a 1% packet loss detected at\\n   the receiver triggers an encoding rate change, dropping to the next\\n   lower provisioned video encoding rate.  As such, Active Queue\\n   Management [RFC2309] SHOULD be used primarily to switch the video\\n   encoding rate under congestion, changing from high rate to lower\\n   rate, i.e., 1472 kbps to 768 kbps.  The probability of loss of AF41\\n   traffic MUST NOT exceed the probability of loss of AF42 traffic,\\n   which in turn MUST NOT exceed the probability of loss of AF43\\n   traffic.\\n\\n   If RED [RFC2309] is used as an AQM algorithm, the min-threshold\\n   specifies a target queue depth for each DSCP, and the max-threshold\\n   specifies the queue depth above which all traffic with such a DSCP is\\n   dropped or ECN marked.  Thus, in this service class, the following\\n   inequality should hold in queue configurations:\\n\\n   o  min-threshold AF43 < max-threshold AF43\\n   o  max-threshold AF43 <= min-threshold AF42\\n   o  min-threshold AF42 < max-threshold AF42\\n   o  max-threshold AF42 <= min-threshold AF41\\n   o  min-threshold AF41 < max-threshold AF41\\n   o  max-threshold AF41 <= memory assigned to the queue\\n\\n   Note: This configuration tends to drop AF43 traffic before AF42 and\\n   AF42 before AF41.  Many other AQM algorithms exist and are used; they\\n   should be configured to achieve a similar result.\"\n}",
+          "annotations": null,
+          "meta": null
+        }
+      ],
+      "structured_content": null,
+      "is_error": false,
+      "result_type": "complete"
+    }
+  }
+]

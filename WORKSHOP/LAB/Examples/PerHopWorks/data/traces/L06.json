@@ -1,0 +1,86 @@
+[
+  {
+    "id": "contract-1",
+    "tick": 0,
+    "dock": "in",
+    "octet": 184,
+    "class": "telephony",
+    "label": {
+      "application": "",
+      "flood": false
+    },
+    "size": 500
+  },
+  {
+    "id": "contract-2",
+    "tick": 0,
+    "dock": "in",
+    "octet": 184,
+    "class": "telephony",
+    "label": {
+      "application": "",
+      "flood": false
+    },
+    "size": 500
+  },
+  {
+    "id": "flood-0",
+    "tick": 0,
+    "dock": "in",
+    "octet": 184,
+    "class": "telephony",
+    "label": {
+      "application": "",
+      "flood": true
+    },
+    "size": 1000
+  },
+  {
+    "id": "flood-1",
+    "tick": 0,
+    "dock": "in",
+    "octet": 184,
+    "class": "telephony",
+    "label": {
+      "application": "",
+      "flood": true
+    },
+    "size": 1000
+  },
+  {
+    "id": "flood-2",
+    "tick": 0,
+    "dock": "in",
+    "octet": 184,
+    "class": "telephony",
+    "label": {
+      "application": "",
+      "flood": true
+    },
+    "size": 1000
+  },
+  {
+    "id": "flood-3",
+    "tick": 0,
+    "dock": "in",
+    "octet": 184,
+    "class": "telephony",
+    "label": {
+      "application": "",
+      "flood": true
+    },
+    "size": 1000
+  },
+  {
+    "id": "contract-later",
+    "tick": 20,
+    "dock": "in",
+    "octet": 184,
+    "class": "telephony",
+    "label": {
+      "application": "",
+      "flood": false
+    },
+    "size": 1000
+  }
+]

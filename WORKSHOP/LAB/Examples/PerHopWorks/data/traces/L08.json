@@ -1,0 +1,122 @@
+[
+  {
+    "id": "trusted-1",
+    "tick": 0,
+    "dock": "trusted",
+    "octet": 144,
+    "class": "conferencing",
+    "label": {
+      "application": ""
+    },
+    "size": 1000,
+    "color": "yellow"
+  },
+  {
+    "id": "trusted-2",
+    "tick": 0,
+    "dock": "trusted",
+    "octet": 136,
+    "class": "conferencing",
+    "label": {
+      "application": ""
+    },
+    "size": 1000,
+    "color": "green"
+  },
+  {
+    "id": "trusted-3",
+    "tick": 0,
+    "dock": "trusted",
+    "octet": 152,
+    "class": "conferencing",
+    "label": {
+      "application": ""
+    },
+    "size": 1000,
+    "color": "red"
+  },
+  {
+    "id": "trusted-4",
+    "tick": 0,
+    "dock": "trusted",
+    "octet": 136,
+    "class": "conferencing",
+    "label": {
+      "application": ""
+    },
+    "size": 1000,
+    "color": "green"
+  },
+  {
+    "id": "trusted-5",
+    "tick": 10,
+    "dock": "trusted",
+    "octet": 136,
+    "class": "conferencing",
+    "label": {
+      "application": ""
+    },
+    "size": 1000,
+    "color": "green"
+  },
+  {
+    "id": "user-1",
+    "tick": 0,
+    "dock": "user",
+    "octet": 152,
+    "class": "conferencing",
+    "label": {
+      "application": ""
+    },
+    "size": 1000,
+    "color": "red"
+  },
+  {
+    "id": "user-2",
+    "tick": 0,
+    "dock": "user",
+    "octet": 152,
+    "class": "conferencing",
+    "label": {
+      "application": ""
+    },
+    "size": 1000,
+    "color": "red"
+  },
+  {
+    "id": "user-3",
+    "tick": 0,
+    "dock": "user",
+    "octet": 152,
+    "class": "conferencing",
+    "label": {
+      "application": ""
+    },
+    "size": 1000,
+    "color": "red"
+  },
+  {
+    "id": "user-4",
+    "tick": 0,
+    "dock": "user",
+    "octet": 152,
+    "class": "conferencing",
+    "label": {
+      "application": ""
+    },
+    "size": 1000,
+    "color": "red"
+  },
+  {
+    "id": "user-5",
+    "tick": 10,
+    "dock": "user",
+    "octet": 152,
+    "class": "conferencing",
+    "label": {
+      "application": ""
+    },
+    "size": 1000,
+    "color": "red"
+  }
+]

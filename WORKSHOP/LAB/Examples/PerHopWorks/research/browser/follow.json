@@ -1,0 +1,37 @@
+{
+  "following": {
+    "view": "3d",
+    "level": "L01",
+    "tick": 0,
+    "grade": null,
+    "render": {
+      "cameraMode": "follow",
+      "followId": "voice-clear",
+      "drawCalls": 10,
+      "triangles": 32264,
+      "frames": 14,
+      "medianMs": 16.69999999999999,
+      "p95Ms": 16.700000000000045,
+      "renderer": "WebKit WebGL",
+      "pixelRatio": 1
+    }
+  },
+  "build": {
+    "view": "3d",
+    "level": "L01",
+    "tick": 0,
+    "grade": null,
+    "render": {
+      "cameraMode": "build",
+      "followId": null,
+      "drawCalls": 10,
+      "triangles": 32264,
+      "frames": 20,
+      "medianMs": 16.69999999999999,
+      "p95Ms": 16.700000000000045,
+      "renderer": "WebKit WebGL",
+      "pixelRatio": 1
+    }
+  },
+  "tickAndGradePreserved": true
+}

@@ -1,0 +1,2 @@
+import {esc} from '../dom.js';
+export function debriefMarkup(level,passed){return `<div class="debrief"><span class="eyebrow">${passed?'LESSON COMPLETE':'KEEP EXPLORING'}</span><h2>${passed?'You made the bits matter.':'Your factory is ready for another idea.'}</h2><p>${esc(level.concept)}</p><p>Follow a crate in the trace, compare the measured checks, and carry what you learned to the next work order.</p><button id="return-floor" class="secondary">Back to the factory</button>${passed?'<button id="next-level" class="primary">Next work order ↗</button>':''}</div>`;}

@@ -1,0 +1,134 @@
+{
+  "feature": "001-per-hop-works",
+  "constitution": "1.1.0",
+  "workflow": {
+    "constitution": "complete",
+    "specify": "complete",
+    "clarify": "complete",
+    "plan": "complete",
+    "tasks": "complete",
+    "analyze": "complete"
+  },
+  "runner": "Direct Codex execution of five bounded Ralph-style loops; Claude stop hook is unavailable in this host",
+  "current_loop": 5,
+  "loops": [
+    {
+      "loop": 1,
+      "status": "complete",
+      "task_count": 17,
+      "exit_passed": true,
+      "completed_tasks": [
+        "T001",
+        "T002",
+        "T003",
+        "T004",
+        "T005",
+        "T006",
+        "T007",
+        "T008",
+        "T009",
+        "T010",
+        "T011",
+        "T012",
+        "T013",
+        "T014",
+        "T015",
+        "T016",
+        "T017"
+      ],
+      "tests_passed": 37
+    },
+    {
+      "loop": 2,
+      "status": "complete",
+      "task_count": 15,
+      "exit_passed": true,
+      "completed_tasks": [
+        "T018",
+        "T019",
+        "T020",
+        "T021",
+        "T022",
+        "T023",
+        "T024",
+        "T025",
+        "T026",
+        "T027",
+        "T028",
+        "T029",
+        "T030",
+        "T031",
+        "T032"
+      ],
+      "tests_passed": 49
+    },
+    {
+      "loop": 3,
+      "status": "complete",
+      "task_count": 13,
+      "exit_passed": true,
+      "completed_tasks": [
+        "T033",
+        "T034",
+        "T035",
+        "T036",
+        "T037",
+        "T038",
+        "T039",
+        "T040",
+        "T041",
+        "T042",
+        "T043",
+        "T044",
+        "T045"
+      ],
+      "tests_passed": 51,
+      "pending": []
+    },
+    {
+      "loop": 4,
+      "status": "complete",
+      "task_count": 14,
+      "exit_passed": true,
+      "completed_tasks": [
+        "T046",
+        "T047",
+        "T048",
+        "T049",
+        "T050",
+        "T051",
+        "T052",
+        "T053",
+        "T054",
+        "T055",
+        "T056",
+        "T057",
+        "T058",
+        "T059"
+      ],
+      "tests_passed": 71
+    },
+    {
+      "loop": 5,
+      "status": "complete",
+      "task_count": 10,
+      "exit_passed": true,
+      "completed_tasks": [
+        "T060",
+        "T061",
+        "T062",
+        "T063",
+        "T064",
+        "T065",
+        "T066",
+        "T067",
+        "T068",
+        "T069"
+      ],
+      "tests_passed": 78
+    }
+  ],
+  "complete": true,
+  "completed_on": "2026-11-04",
+  "acceptance_report": "research/loops/loop-5.md"
+}

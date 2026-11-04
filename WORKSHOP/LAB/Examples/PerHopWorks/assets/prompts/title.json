@@ -1,0 +1,10 @@
+{
+  "id": "title",
+  "provider": "ChatGPT built-in image_gen",
+  "model": "not exposed by tool",
+  "intent": "generate",
+  "prompt": "Create a polished 16:9 title key art illustration for Per-Hop Works, a friendly educational packet-factory game. No text, no letters, no numbers. No logos, signage, symbols, glyph-like marks, or watermarks. A welcoming low-poly miniature factory diorama, viewed in three-quarter isometric perspective: matte ivory sorting machines with split chutes, teal and charcoal conveyor belts, small square orange and sky-blue delivery crates with tiny luminous rectangular sockets on their lids, translucent blue token tanks, a warm amber merging gate, open industrial hall. Flat-shaded PBR aesthetic, roughness about 0.6, soft clean studio light mixed with warm afternoon window light. Okabe-Ito inspired orange, sky-blue, green and cream against deep midnight teal. Emissive accents only on crate sockets and token water. Crates carry absolutely no printed patterns or markings. Generous atmospheric negative space in left half for interface copy added separately by code; the charming readable factory occupies right two-thirds, with one hero orange crate close in lower right. No people, no screens, no readable symbols. High-end editorial game key art, carefully composed, inviting, simple enough for beginners, crisp geometry, restrained detail, wide cinematic composition.",
+  "reference": null,
+  "format": "16:9",
+  "approval_basis": "Owner continuing authorization, 2026-11-04; assistant inspection before downstream use"
+}

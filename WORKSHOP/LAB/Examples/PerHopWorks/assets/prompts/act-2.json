@@ -1,0 +1,9 @@
+{
+  "id": "act-2",
+  "provider": "ChatGPT built-in image_gen",
+  "model": "not exposed by tool",
+  "intent": "generate using style reference",
+  "prompt": "Use the supplied title image ONLY as a style/color/material reference, not as an edit target. Generate a new composition. Friendly educational packet-factory game, matte ivory, deep teal, warm orange and sky-blue, flat-shaded low-poly PBR, roughness about 0.6. Emissive accents only on data sockets and token water. No text, no letters, no numbers. No logos, symbols, glyph-like marks, watermarks, signage, printed crate marks, UI, or people. Wide 16:9 act card. A pair of beautiful translucent sky-blue token tanks beside a matte ivory paint arch and a split conveyor. Three small orange and blue crates. Clear silhouette, low-poly flat shading, warm light, dark teal background. Machines occupy right two thirds, left has quiet negative space.",
+  "reference": "assets/images/title.webp",
+  "approval_basis": "Owner continuing authorization, 2026-11-04; assistant visual inspection"
+}

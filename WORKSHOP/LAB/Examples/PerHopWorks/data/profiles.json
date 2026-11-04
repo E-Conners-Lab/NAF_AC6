@@ -1,0 +1,185 @@
+{
+  "rfc4594": {
+    "label": "RFC 4594 service classes",
+    "source": "RFC 4594 \u00a72.3; updates: RFC 5865 and RFC 8622",
+    "facts": [
+      "F-0014",
+      "F-0034",
+      "F-0035"
+    ],
+    "classes": {
+      "network_control": {
+        "label": "Network Control",
+        "dscp": 48,
+        "name": "CS6",
+        "application": "routing",
+        "color": "#56B4E9",
+        "pattern": "cross",
+        "source": "RFC 4594 \u00a73.2; \u00a72.3 Figure 3",
+        "facts": [
+          "F-0038"
+        ],
+        "color_dscp": null
+      },
+      "telephony": {
+        "label": "Telephony",
+        "dscp": 46,
+        "name": "EF",
+        "application": "voip",
+        "color": "#E69F00",
+        "pattern": "dots",
+        "source": "RFC 4594 \u00a74.1; \u00a72.3 Figure 3",
+        "facts": [
+          "F-0039"
+        ],
+        "color_dscp": null
+      },
+      "signaling": {
+        "label": "Signaling",
+        "dscp": 40,
+        "name": "CS5",
+        "application": "sip",
+        "color": "#CC79A7",
+        "pattern": "bars",
+        "source": "RFC 4594 \u00a74.2; \u00a72.3 Figure 3",
+        "facts": [
+          "F-0040"
+        ],
+        "color_dscp": null
+      },
+      "conferencing": {
+        "label": "Multimedia Conferencing",
+        "dscp": 34,
+        "name": "AF41",
+        "application": "conference",
+        "color": "#009E73",
+        "pattern": "diagonal",
+        "source": "RFC 4594 \u00a74.3; \u00a72.3 Figure 3",
+        "facts": [
+          "F-0041"
+        ],
+        "color_dscp": {
+          "green": 34,
+          "yellow": 36,
+          "red": 38
+        }
+      },
+      "interactive": {
+        "label": "Real-Time Interactive",
+        "dscp": 32,
+        "name": "CS4",
+        "application": "gaming",
+        "color": "#F0E442",
+        "pattern": "checker",
+        "source": "RFC 4594 \u00a74.4; \u00a72.3 Figure 3",
+        "facts": [
+          "F-0042"
+        ],
+        "color_dscp": null
+      },
+      "streaming": {
+        "label": "Multimedia Streaming",
+        "dscp": 26,
+        "name": "AF31",
+        "application": "streaming",
+        "color": "#0072B2",
+        "pattern": "waves",
+        "source": "RFC 4594 \u00a74.5; \u00a72.3 Figure 3",
+        "facts": [
+          "F-0043"
+        ],
+        "color_dscp": {
+          "green": 26,
+          "yellow": 28,
+          "red": 30
+        }
+      },
+      "broadcast": {
+        "label": "Broadcast Video",
+        "dscp": 24,
+        "name": "CS3",
+        "application": "broadcast",
+        "color": "#D55E00",
+        "pattern": "horizontal",
+        "source": "RFC 4594 \u00a74.6; \u00a72.3 Figure 3",
+        "facts": [
+          "F-0044"
+        ],
+        "color_dscp": null
+      },
+      "low_latency": {
+        "label": "Low-Latency Data",
+        "dscp": 18,
+        "name": "AF21",
+        "application": "ordering",
+        "color": "#56B4E9",
+        "pattern": "rings",
+        "source": "RFC 4594 \u00a74.7; \u00a72.3 Figure 3",
+        "facts": [
+          "F-0045"
+        ],
+        "color_dscp": {
+          "green": 18,
+          "yellow": 20,
+          "red": 22
+        }
+      },
+      "oam": {
+        "label": "OAM",
+        "dscp": 16,
+        "name": "CS2",
+        "application": "snmp",
+        "color": "#009E73",
+        "pattern": "vertical",
+        "source": "RFC 4594 \u00a73.3; \u00a72.3 Figure 3",
+        "facts": [
+          "F-0046"
+        ],
+        "color_dscp": null
+      },
+      "high_throughput": {
+        "label": "High-Throughput Data",
+        "dscp": 10,
+        "name": "AF11",
+        "application": "backup",
+        "color": "#CC79A7",
+        "pattern": "diamond",
+        "source": "RFC 4594 \u00a74.8; \u00a72.3 Figure 3",
+        "facts": [
+          "F-0047"
+        ],
+        "color_dscp": {
+          "green": 10,
+          "yellow": 12,
+          "red": 14
+        }
+      },
+      "standard": {
+        "label": "Standard",
+        "dscp": 0,
+        "name": "DF",
+        "application": "web",
+        "color": "#A9B6C1",
+        "pattern": "plain",
+        "source": "RFC 4594 \u00a74.9; \u00a72.3 Figure 3",
+        "facts": [
+          "F-0048"
+        ],
+        "color_dscp": null
+      },
+      "low_priority": {
+        "label": "Low Priority (2006 profile)",
+        "dscp": 8,
+        "name": "CS1",
+        "application": "background",
+        "color": "#8b9299",
+        "pattern": "chevron",
+        "source": "RFC 4594 \u00a72.4.3 (historical); RFC 8622 \u00a710 updates this mapping",
+        "facts": [
+          "F-0033",
+          "F-0035"
+        ]
+      }
+    }
+  }
+}

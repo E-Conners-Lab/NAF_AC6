@@ -1,0 +1,83 @@
+✔ supplied threshold inequalities and one exact violation (1.174209ms)
+✔ exact accumulator spaces probability 0.1 without floating drift (0.710583ms)
+✔ min passes and max forces a drop; DSCP accumulators independent (0.877625ms)
+✔ all 17 actual Blender GLBs fit budgets and preserve the renderer node contract (6.434ms)
+✔ every fact has live verification evidence, date and section source (15.69775ms)
+✔ codepoints use audited facts and correct six-bit values (0.565834ms)
+✔ all octets round trip; marking preserves ECN (4.529458ms)
+✔ supplied codepoint/octets/precedence fixtures (0.308791ms)
+✔ invalid octets and codepoints never truncate (0.641ms)
+✔ docks stay in place but their outputs reconnect; undo restores the full layout (0.866333ms)
+✔ predict factories can be inspected but cannot be edited (0.138459ms)
+✔ compiles a spatial layout without mutating inputs (0.666375ms)
+✔ disconnected, duplicate, cycle, palette, locked, config and placement errors are designed states (1.732ms)
+✔ rotation changes real belt endpoints and duplicate input connections fail (0.280625ms)
+✔ ROUTE, PREDICT and METER-PREDICT positive/negative contracts (2.017042ms)
+✔ TRUST accepts a trusted delivery; catches surviving untrusted control marking (1.389791ms)
+✔ METER-MODE and POLICE-EF positive/negative contracts (0.835292ms)
+✔ DELAY-BOUND and MIN-SHARE use bounds and congestion-window bytes (0.482125ms)
+✔ STANDARD-PRESENT checks a dedicated reachable weighted queue (0.973125ms)
+✔ NO-AQM-ON and RED-THRESHOLDS validate static structure (0.922625ms)
+✔ LOSS-ORDER uses complete nonzero cohorts with stable denominator (1.188125ms)
+✔ CONSERVATION rejects duplicate terminal records (0.699417ms)
+✔ grader handles invalid graphs and unknown checks without success (0.106791ms)
+✔ conservation and data-driven marking pass real runs, wrong expectation fails with crate/culprit (1.654042ms)
+✔ empty required populations and unfinished runs cannot pass (1.894709ms)
+✔ L01 reference passes every declared check (2.046375ms)
+✔ L01 wrong fixture triggers ROUTE/wrong-route (1.514208ms)
+✔ L02 reference passes every declared check (2.172584ms)
+✔ L02 wrong fixture triggers MARK/wrong-mark (4.196542ms)
+✔ L03 reference passes every declared check (4.067ms)
+✔ L03 wrong fixture triggers PREDICT/wrong-prediction (1.632125ms)
+✔ L04 reference passes every declared check (8.2775ms)
+✔ L04 wrong fixture triggers MARK/wrong-mark (4.62575ms)
+✔ L05 reference passes every declared check (1.372125ms)
+✔ L05 wrong fixture triggers TRUST/untrusted-mark (0.820667ms)
+✖ the complete campaign includes all twelve work orders and both parts of each meter lesson (0.600875ms)
+✔ srTCM supplied fixture (0.165875ms)
+✔ trTCM supplied fixture (0.058209ms)
+✔ color-aware does not upgrade and red does not spend tokens (0.049625ms)
+✔ literal refill clock retains sub-byte credit without float drift (0.225333ms)
+✔ srTCM overflow fills committed before excess (0.027292ms)
+✔ state input is immutable; bad parameters/time are rejected (0.059333ms)
+✔ strict priority before weighted, no partial packets or input mutation (0.289333ms)
+✔ priority head prevents smaller weighted packet consuming remaining capacity (0.048167ms)
+✔ weighted 1:2 service uses bytes with persistent rounds (0.226375ms)
+✔ large head accumulates deficit and impossible capacity rejects (0.058375ms)
+✔ RFC seed traces agree with independent byte-update reference (0.134166ms)
+✔ same input produces identical snapshots, events and metrics; ECN survives (0.34675ms)
+✔ bounded drain cannot fabricate completion (0.134458ms)
+✔ duplicate IDs and missing dock traces are rejected without a crash (0.10175ms)
+✔ versioned save round trip and safe recovery (0.085791ms)
+✔ only passing campaign results unlock a level (0.043541ms)
+ℹ tests 52
+ℹ suites 0
+ℹ pass 51
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 172.550584
+
+✖ failing tests:
+
+test at tests/levels.test.js:8:1
+✖ the complete campaign includes all twelve work orders and both parts of each meter lesson (0.600875ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  5 !== 12
+  
+      at TestContext.<anonymous> (file:///Users/john.capobianco/NAF_AC6/WORKSHOP/LAB/Examples/PerHopWorks/tests/levels.test.js:8:110)
+      at Test.runInAsyncScope (node:async_hooks:213:14)
+      at Test.run (node:internal/test_runner/test:1106:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:788:18)
+      at Test.postRun (node:internal/test_runner/test:1235:19)
+      at Test.run (node:internal/test_runner/test:1163:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 5,
+    expected: 12,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

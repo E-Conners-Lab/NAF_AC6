@@ -1,0 +1,246 @@
+{
+  "records": [
+    {
+      "test": "initial incorrect L01 fails without unlocking L02",
+      "passed": true
+    },
+    {
+      "level": "L01",
+      "keyboard_only": true,
+      "checks": "3 / 3 CHECKS",
+      "passed": true,
+      "render": {
+        "maxDrawCalls": 20,
+        "maxLiveCrates": 4,
+        "cameraMode": "build",
+        "followId": null,
+        "drawCalls": 15,
+        "triangles": 33060,
+        "frames": 55,
+        "medianMs": 16.69999999999999,
+        "p95Ms": 16.799999999999955,
+        "renderer": "WebKit WebGL",
+        "pixelRatio": 1
+      }
+    },
+    {
+      "level": "L02",
+      "keyboard_only": true,
+      "checks": "3 / 3 CHECKS",
+      "passed": true,
+      "render": {
+        "maxDrawCalls": 47,
+        "maxLiveCrates": 5,
+        "cameraMode": "build",
+        "followId": null,
+        "drawCalls": 35,
+        "triangles": 40968,
+        "frames": 49,
+        "medianMs": 16.699999999999818,
+        "p95Ms": 16.700000000000273,
+        "renderer": "WebKit WebGL",
+        "pixelRatio": 1
+      }
+    },
+    {
+      "level": "L03",
+      "keyboard_only": true,
+      "checks": "3 / 3 CHECKS",
+      "passed": true,
+      "render": {
+        "maxDrawCalls": 23,
+        "maxLiveCrates": 5,
+        "cameraMode": "build",
+        "followId": null,
+        "drawCalls": 16,
+        "triangles": 36420,
+        "frames": 57,
+        "medianMs": 16.699999999999818,
+        "p95Ms": 16.700000000000273,
+        "renderer": "WebKit WebGL",
+        "pixelRatio": 1
+      }
+    },
+    {
+      "level": "L04",
+      "keyboard_only": true,
+      "checks": "3 / 3 CHECKS",
+      "passed": true,
+      "render": {
+        "maxDrawCalls": 57,
+        "maxLiveCrates": 8,
+        "cameraMode": "build",
+        "followId": null,
+        "drawCalls": 47,
+        "triangles": 60140,
+        "frames": 131,
+        "medianMs": 16.699999999999818,
+        "p95Ms": 16.700000000000728,
+        "renderer": "WebKit WebGL",
+        "pixelRatio": 1
+      }
+    },
+    {
+      "level": "L05",
+      "keyboard_only": true,
+      "checks": "4 / 4 CHECKS",
+      "passed": true,
+      "render": {
+        "maxDrawCalls": 19,
+        "maxLiveCrates": 3,
+        "cameraMode": "build",
+        "followId": null,
+        "drawCalls": 15,
+        "triangles": 32760,
+        "frames": 26,
+        "medianMs": 16.699999999999818,
+        "p95Ms": 16.700000000000728,
+        "renderer": "WebKit WebGL",
+        "pixelRatio": 1
+      }
+    },
+    {
+      "level": "L06",
+      "keyboard_only": true,
+      "checks": "4 / 4 CHECKS",
+      "passed": true,
+      "render": {
+        "maxDrawCalls": 17,
+        "maxLiveCrates": 6,
+        "cameraMode": "build",
+        "followId": null,
+        "drawCalls": 13,
+        "triangles": 45680,
+        "frames": 34,
+        "medianMs": 16.699999999999818,
+        "p95Ms": 33.30000000000018,
+        "renderer": "WebKit WebGL",
+        "pixelRatio": 1
+      }
+    },
+    {
+      "level": "L07",
+      "keyboard_only": true,
+      "checks": "4 / 4 CHECKS",
+      "passed": true,
+      "render": {
+        "maxDrawCalls": 24,
+        "maxLiveCrates": 5,
+        "cameraMode": "build",
+        "followId": null,
+        "drawCalls": 21,
+        "triangles": 51780,
+        "frames": 85,
+        "medianMs": 16.69999999999891,
+        "p95Ms": 16.700000000000728,
+        "renderer": "WebKit WebGL",
+        "pixelRatio": 1
+      }
+    },
+    {
+      "level": "L08",
+      "keyboard_only": true,
+      "checks": "5 / 5 CHECKS",
+      "passed": true,
+      "render": {
+        "maxDrawCalls": 44,
+        "maxLiveCrates": 10,
+        "cameraMode": "build",
+        "followId": null,
+        "drawCalls": 37,
+        "triangles": 61540,
+        "frames": 46,
+        "medianMs": 16.69999999999891,
+        "p95Ms": 16.799999999999272,
+        "renderer": "WebKit WebGL",
+        "pixelRatio": 1
+      }
+    },
+    {
+      "level": "L09",
+      "keyboard_only": true,
+      "checks": "5 / 5 CHECKS",
+      "passed": true,
+      "render": {
+        "maxDrawCalls": 31,
+        "maxLiveCrates": 53,
+        "cameraMode": "build",
+        "followId": null,
+        "drawCalls": 26,
+        "triangles": 53152,
+        "frames": 58,
+        "medianMs": 16.69999999999891,
+        "p95Ms": 16.700000000000728,
+        "renderer": "WebKit WebGL",
+        "pixelRatio": 1
+      }
+    },
+    {
+      "level": "L10",
+      "keyboard_only": true,
+      "checks": "4 / 4 CHECKS",
+      "passed": true,
+      "render": {
+        "maxDrawCalls": 42,
+        "maxLiveCrates": 187,
+        "cameraMode": "build",
+        "followId": null,
+        "drawCalls": 34,
+        "triangles": 55912,
+        "frames": 121,
+        "medianMs": 16.69999999999891,
+        "p95Ms": 16.799999999999272,
+        "renderer": "WebKit WebGL",
+        "pixelRatio": 1
+      }
+    },
+    {
+      "level": "L11",
+      "keyboard_only": true,
+      "checks": "5 / 5 CHECKS",
+      "passed": true,
+      "render": {
+        "maxDrawCalls": 29,
+        "maxLiveCrates": 101,
+        "cameraMode": "build",
+        "followId": null,
+        "drawCalls": 22,
+        "triangles": 52532,
+        "frames": 92,
+        "medianMs": 16.69999999999891,
+        "p95Ms": 16.700000000000728,
+        "renderer": "WebKit WebGL",
+        "pixelRatio": 1
+      }
+    },
+    {
+      "level": "L12",
+      "keyboard_only": true,
+      "checks": "11 / 11 CHECKS",
+      "passed": true,
+      "render": {
+        "maxDrawCalls": 97,
+        "maxLiveCrates": 601,
+        "cameraMode": "build",
+        "followId": null,
+        "drawCalls": 78,
+        "triangles": 99308,
+        "frames": 102,
+        "medianMs": 16.69999999999709,
+        "p95Ms": 16.799999999999272,
+        "renderer": "WebKit WebGL",
+        "pixelRatio": 1
+      }
+    },
+    {
+      "test": "Crate Trace keyboard event seeking",
+      "passed": true
+    },
+    {
+      "test": "reload preserves all earned unlocks and drafts",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "at": "2026-11-04T20:35:17.226Z"
+}

@@ -1,0 +1,125 @@
+{
+  "machines": [
+    {
+      "id": "voice",
+      "type": "dock_in",
+      "x": 1,
+      "y": 3,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "web",
+      "type": "dock_in",
+      "x": 1,
+      "y": 17,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "out",
+      "type": "dock_out",
+      "x": 28,
+      "y": 10,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "policer",
+      "type": "tank_single",
+      "x": 6,
+      "y": 3,
+      "rotation": 0,
+      "config": {
+        "rate": 1000,
+        "burst": 1000
+      }
+    },
+    {
+      "id": "recycle",
+      "type": "recycler",
+      "x": 12,
+      "y": 6,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "voice-q",
+      "type": "buffer_belt",
+      "x": 15,
+      "y": 3,
+      "rotation": 0,
+      "config": {
+        "capacity": 256
+      }
+    },
+    {
+      "id": "web-q",
+      "type": "buffer_belt",
+      "x": 15,
+      "y": 17,
+      "rotation": 0,
+      "config": {
+        "capacity": 256
+      }
+    },
+    {
+      "id": "merge",
+      "type": "priority_merger",
+      "x": 23,
+      "y": 10,
+      "rotation": 0,
+      "config": {
+        "quantum": 1000,
+        "priority": "voice",
+        "weights": {
+          "web": 1
+        }
+      }
+    }
+  ],
+  "links": [
+    {
+      "from": "voice",
+      "port": "out",
+      "to": "policer",
+      "input": "in"
+    },
+    {
+      "from": "policer",
+      "port": "conform",
+      "to": "voice-q",
+      "input": "in"
+    },
+    {
+      "from": "policer",
+      "port": "exceed",
+      "to": "recycle",
+      "input": "in"
+    },
+    {
+      "from": "voice-q",
+      "port": "out",
+      "to": "merge",
+      "input": "voice"
+    },
+    {
+      "from": "web",
+      "port": "out",
+      "to": "web-q",
+      "input": "in"
+    },
+    {
+      "from": "web-q",
+      "port": "out",
+      "to": "merge",
+      "input": "web"
+    },
+    {
+      "from": "merge",
+      "port": "out",
+      "to": "out",
+      "input": "in"
+    }
+  ]
+}

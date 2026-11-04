@@ -1,0 +1,21 @@
+{
+  "at": "2026-11-04T19:43:55.847Z",
+  "result": {
+    "drawCalls": 71,
+    "triangles": 185320,
+    "frames": 588,
+    "medianMs": 16.699999999999818,
+    "p95Ms": 16.799999999999272,
+    "renderer": "WebKit WebGL",
+    "pixelRatio": 1,
+    "maxDraw": 71,
+    "crates": 400,
+    "width": 1920,
+    "height": 1080,
+    "wallMs": 10002.099999999255,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "hardwareConcurrency": 14
+  },
+  "hardware": "      Model Name: MacBook Pro\n      Model Identifier: Mac16,7\n      Chip: Apple M4 Pro\n      Total Number of Cores: 14 (10 Performance and 4 Efficiency)\n      Memory: 48 GB\n      Chipset Model: Apple M4 Pro\n      Total Number of Cores: 20\n      Metal Support: Metal 4",
+  "errors": []
+}

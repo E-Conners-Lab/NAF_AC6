@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {validateThresholds, aqmArrival} from '../engine/aqm.js';
+const thresholds={'AF43':[10,20],'AF42':[20,30],'AF41':[30,40]};
+test('supplied threshold inequalities and one exact violation',()=>{assert.deepEqual(validateThresholds(thresholds,64,'AF4'),[]);const errors=validateThresholds({...thresholds,AF43:[10,25]},64,'AF4');assert.equal(errors.length,1);assert.equal(errors[0].rule,'max AF43 <= min AF42');});
+test('exact accumulator spaces probability 0.1 without floating drift',()=>{let s={};let drops=[];for(let i=1;i<=20;i++){const r=aqmArrival(s,'AF43',15,thresholds,0.2);s=r.state;if(r.drop)drops.push(i);}assert.deepEqual(drops,[10,20]);});
+test('min passes and max forces a drop; DSCP accumulators independent',()=>{let r=aqmArrival({},'AF43',10,thresholds,0.1);assert.equal(r.drop,false);r=aqmArrival(r.state,'AF43',20,thresholds,0.1);assert.equal(r.drop,true);assert.equal(aqmArrival(r.state,'AF41',20,thresholds,0.1).drop,false);});

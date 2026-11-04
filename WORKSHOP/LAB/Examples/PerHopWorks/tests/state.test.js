@@ -1,0 +1,11 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {freshState,decodeSave,encodeSave,completeLevel} from '../engine/state.js';
+test('versioned save round trip and safe recovery',()=>{const s=freshState();assert.deepEqual(decodeSave(encodeSave(s)).state,s);assert.equal(decodeSave('{').ok,false);assert.equal(decodeSave('{"schemaVersion":99}').ok,false);});
+test('only passing campaign results unlock a level',()=>{const s=freshState();assert.equal(completeLevel(s,'L01',{passed:false},'campaign').completed.length,0);assert.equal(completeLevel(s,'L01',{passed:true},'demo').completed.length,0);assert.deepEqual(completeLevel(s,'L01',{passed:true},'campaign').completed,['L01']);assert.deepEqual(s.completed,[]);});
+test('malformed settings and drafts are rejected before they can crash a view',()=>{
+ for(const mutation of [s=>s.settings.speed='fast',s=>s.settings.view='other',s=>s.settings.shadows='yes',s=>s.drafts=[],s=>s.completed=['L99'],s=>s.drafts.L01={machines:[null],links:[]}]){const s=freshState();mutation(s);assert.equal(decodeSave(JSON.stringify(s)).ok,false);}
+});
+
+test('valid editable drafts survive a save round trip',()=>{const s=freshState();s.drafts.L01={machines:[{id:'in',type:'dock_in',x:1,y:2,config:{}}],links:[{from:'in',to:'out',port:'out',input:'in'}]};assert.deepEqual(decodeSave(encodeSave(s)).state,s);});
+
+test('corrupt nested configuration is rejected without rejecting unfinished layouts',()=>{const s=freshState();s.drafts.L01={machines:[{id:'sort',type:'sorter',x:2,y:2,config:{rules:'damaged'}}],links:[]};assert.equal(decodeSave(JSON.stringify(s)).ok,false);s.drafts.L01.machines[0].config={rules:[{value:47,port:'voice'}]};assert.equal(decodeSave(JSON.stringify(s)).ok,true);});
+test('all shipped initial factories and reference drafts can be saved',async()=>{const {readFile}=await import('node:fs/promises');const levels=JSON.parse(await readFile(new URL('../data/levels.json',import.meta.url)));for(const l of levels){for(const draft of [l.initial_factory,JSON.parse(await readFile(new URL('../data/'+l.reference_solution,import.meta.url)))]){const s=freshState();s.drafts[l.id]=draft;assert.equal(decodeSave(encodeSave(s)).ok,true,l.id);}}});

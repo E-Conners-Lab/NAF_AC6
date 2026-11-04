@@ -1,0 +1,18 @@
+{
+  "errors": [],
+  "diagnostics": {
+    "view": "3d",
+    "level": "L01",
+    "tick": 0,
+    "grade": null,
+    "render": {
+      "drawCalls": 14,
+      "triangles": 32996,
+      "frames": 11,
+      "medianMs": 16.600000000000023,
+      "p95Ms": 16.799999999999955,
+      "renderer": "WebKit WebGL",
+      "pixelRatio": 1
+    }
+  }
+}

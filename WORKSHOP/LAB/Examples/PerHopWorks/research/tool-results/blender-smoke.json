@@ -1,0 +1,49 @@
+[
+  {
+    "time": "2026-11-04T19:02:57.571425+00:00",
+    "tool": "get_addon_status",
+    "arguments": {
+      "user_prompt": "Install the Blender MCP and verify its addon and GLB export for Per-Hop Works."
+    },
+    "result": {
+      "meta": null,
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"up_to_date\": true,\n  \"protocol_version\": 15,\n  \"expected_protocol_version\": 15,\n  \"addon_version\": [\n    1,\n    8\n  ],\n  \"capabilities\": [\n    \"bpy_api_lookup\",\n    \"describe_node_type\",\n    \"drain_human_activity\",\n    \"execute_code\",\n    \"get_addon_info\",\n    \"get_object_info\",\n    \"get_scene_info\",\n    \"get_telemetry_consent\",\n    \"get_viewport_screenshot\",\n    \"get_world_state_snapshot\",\n    \"list_scene_items\",\n    \"pick_viewport_object\",\n    \"set_telemetry_consent\"\n  ],\n  \"blender_version\": \"5.2.1 LTS\",\n  \"premium_generators\": [],\n  \"libraries\": {\n    \"polyhaven\": \"off\",\n    \"sketchfab\": \"off\",\n    \"polypizza\": \"off\"\n  },\n  \"generators\": {\n    \"tripo\": \"off\",\n    \"hunyuan3d\": \"off\",\n    \"hyper3d\": \"off\",\n    \"meshy\": \"off\"\n  },\n  \"source\": \"native\",\n  \"warning\": null,\n  \"telemetry_consent\": false,\n  \"update_command\": \"uvx mcp-for-blender install-addon\",\n  \"after_install\": \"If the addon file was updated: in Blender, Preferences \\u2192 Add-ons \\u2192 disable/enable 'Interface: Blender MCP', or restart Blender, then Start MCP Server.\"\n}",
+          "annotations": null,
+          "meta": null
+        }
+      ],
+      "structured_content": {
+        "result": "{\n  \"up_to_date\": true,\n  \"protocol_version\": 15,\n  \"expected_protocol_version\": 15,\n  \"addon_version\": [\n    1,\n    8\n  ],\n  \"capabilities\": [\n    \"bpy_api_lookup\",\n    \"describe_node_type\",\n    \"drain_human_activity\",\n    \"execute_code\",\n    \"get_addon_info\",\n    \"get_object_info\",\n    \"get_scene_info\",\n    \"get_telemetry_consent\",\n    \"get_viewport_screenshot\",\n    \"get_world_state_snapshot\",\n    \"list_scene_items\",\n    \"pick_viewport_object\",\n    \"set_telemetry_consent\"\n  ],\n  \"blender_version\": \"5.2.1 LTS\",\n  \"premium_generators\": [],\n  \"libraries\": {\n    \"polyhaven\": \"off\",\n    \"sketchfab\": \"off\",\n    \"polypizza\": \"off\"\n  },\n  \"generators\": {\n    \"tripo\": \"off\",\n    \"hunyuan3d\": \"off\",\n    \"hyper3d\": \"off\",\n    \"meshy\": \"off\"\n  },\n  \"source\": \"native\",\n  \"warning\": null,\n  \"telemetry_consent\": false,\n  \"update_command\": \"uvx mcp-for-blender install-addon\",\n  \"after_install\": \"If the addon file was updated: in Blender, Preferences \\u2192 Add-ons \\u2192 disable/enable 'Interface: Blender MCP', or restart Blender, then Start MCP Server.\"\n}"
+      },
+      "is_error": false,
+      "result_type": "complete"
+    }
+  },
+  {
+    "time": "2026-11-04T19:02:57.738163+00:00",
+    "tool": "execute_blender_code",
+    "arguments": {
+      "code": "import bpy, json\nbpy.ops.mesh.primitive_cube_add(size=1, location=(0,0,0.5))\nsmoke = bpy.context.object\nsmoke.name = \"phw_mcp_smoke_cube\"\nbpy.ops.object.select_all(action='DESELECT')\nsmoke.select_set(True)\nbpy.context.view_layer.objects.active = smoke\nbpy.ops.object.transform_apply(location=False, rotation=True, scale=True)\nbpy.ops.export_scene.gltf(filepath='/Users/john.capobianco/NAF_AC6/WORKSHOP/lab/examples/PerHopWorks/assets/models/_smoke.glb', export_format='GLB', use_selection=True, export_yup=True)\nbpy.data.objects.remove(smoke, do_unlink=True)\nprint(\"PHW_SMOKE_EXPORTED\")",
+      "user_prompt": "Create a smoke-test cube, export assets/models/_smoke.glb, then remove the cube."
+    },
+    "result": {
+      "meta": null,
+      "content": [
+        {
+          "type": "text",
+          "text": "Code executed successfully: INFO Draco is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.dylib\nINFO MeshOptimizer is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.dylib\n14:02:57 | INFO: Starting glTF 2.0 export\n14:02:57 | INFO: Extracting primitive: Cube.001\n14:02:57 | INFO: Primitives created: 1\n14:02:57 | INFO: Finished glTF 2.0 export in 0.005291938781738281 s\n\nPHW_SMOKE_EXPORTED\n",
+          "annotations": null,
+          "meta": null
+        }
+      ],
+      "structured_content": {
+        "result": "Code executed successfully: INFO Draco is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.dylib\nINFO MeshOptimizer is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.dylib\n14:02:57 | INFO: Starting glTF 2.0 export\n14:02:57 | INFO: Extracting primitive: Cube.001\n14:02:57 | INFO: Primitives created: 1\n14:02:57 | INFO: Finished glTF 2.0 export in 0.005291938781738281 s\n\nPHW_SMOKE_EXPORTED\n"
+      },
+      "is_error": false,
+      "result_type": "complete"
+    }
+  }
+]

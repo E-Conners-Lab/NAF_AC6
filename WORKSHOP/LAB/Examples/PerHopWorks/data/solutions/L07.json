@@ -1,0 +1,123 @@
+{
+  "machines": [
+    {
+      "id": "in",
+      "type": "dock_in",
+      "x": 1,
+      "y": 10,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "green-out",
+      "type": "dock_out",
+      "x": 21,
+      "y": 3,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "yellow-out",
+      "type": "dock_out",
+      "x": 21,
+      "y": 10,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "red-out",
+      "type": "dock_out",
+      "x": 21,
+      "y": 17,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "cascade",
+      "type": "tank_cascade",
+      "x": 6,
+      "y": 10,
+      "rotation": 0,
+      "config": {
+        "cir": 1000,
+        "cbs": 1500,
+        "ebs": 3000,
+        "mode": "blind"
+      }
+    },
+    {
+      "id": "paint-green",
+      "type": "paint_booth",
+      "x": 13,
+      "y": 3,
+      "rotation": 0,
+      "config": {
+        "dscp": 18
+      }
+    },
+    {
+      "id": "paint-yellow",
+      "type": "paint_booth",
+      "x": 13,
+      "y": 10,
+      "rotation": 0,
+      "config": {
+        "dscp": 20
+      }
+    },
+    {
+      "id": "paint-red",
+      "type": "paint_booth",
+      "x": 13,
+      "y": 17,
+      "rotation": 0,
+      "config": {
+        "dscp": 22
+      }
+    }
+  ],
+  "links": [
+    {
+      "from": "in",
+      "port": "out",
+      "to": "cascade",
+      "input": "in"
+    },
+    {
+      "from": "cascade",
+      "port": "green",
+      "to": "paint-green",
+      "input": "in"
+    },
+    {
+      "from": "paint-green",
+      "port": "out",
+      "to": "green-out",
+      "input": "in"
+    },
+    {
+      "from": "cascade",
+      "port": "yellow",
+      "to": "paint-yellow",
+      "input": "in"
+    },
+    {
+      "from": "paint-yellow",
+      "port": "out",
+      "to": "yellow-out",
+      "input": "in"
+    },
+    {
+      "from": "cascade",
+      "port": "red",
+      "to": "paint-red",
+      "input": "in"
+    },
+    {
+      "from": "paint-red",
+      "port": "out",
+      "to": "red-out",
+      "input": "in"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "voice-clear",
+    "tick": 0,
+    "dock": "in",
+    "octet": 184,
+    "class": "telephony",
+    "label": {
+      "application": "voip"
+    },
+    "size": 500
+  },
+  {
+    "id": "voice-ecn",
+    "tick": 4,
+    "dock": "in",
+    "octet": 185,
+    "class": "telephony",
+    "label": {
+      "application": "voip"
+    },
+    "size": 500
+  },
+  {
+    "id": "video",
+    "tick": 8,
+    "dock": "in",
+    "octet": 136,
+    "class": "conferencing",
+    "label": {
+      "application": "conference"
+    },
+    "size": 500
+  },
+  {
+    "id": "web",
+    "tick": 12,
+    "dock": "in",
+    "octet": 0,
+    "class": "standard",
+    "label": {
+      "application": "web"
+    },
+    "size": 500
+  }
+]

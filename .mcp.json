@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "rfc": {
+      "command": "node",
+      "args": [
+        "WORKSHOP/LAB/Examples/PerHopWorks/tools/rfc-mcp/compat.mjs"
+      ]
+    },
+    "blender": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "mcp-for-blender==2.2.7",
+        "mcp-for-blender"
+      ],
+      "env": {
+        "DISABLE_TELEMETRY": "true"
+      }
+    }
+  }
+}

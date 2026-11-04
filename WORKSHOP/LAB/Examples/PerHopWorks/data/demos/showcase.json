@@ -1,0 +1,205 @@
+{
+  "id": "rush-hour",
+  "title": "A busy link. A working factory.",
+  "level": "L12",
+  "factory": "solutions/L12.json",
+  "crate": "voice-contract",
+  "duration_ms": 85000,
+  "profile_note": "Historical RFC 4594 Example 3. RFC 8622 replaces CS1 with LE for current lower-effort recommendations.",
+  "facts": [
+    "F-0001",
+    "F-0002",
+    "F-0007",
+    "F-0008",
+    "F-0010",
+    "F-0012",
+    "F-0013",
+    "F-0016",
+    "F-0030",
+    "F-0031",
+    "F-0033",
+    "F-0035"
+  ],
+  "beats": [
+    {
+      "tick": 1,
+      "at_ms": 0,
+      "title": "Read the lid",
+      "caption": "A crate is one packet. Six lights carry its DSCP label; two separate lights carry ECN.",
+      "camera": {
+        "position": [
+          3.0,
+          1.75,
+          12.5
+        ],
+        "target": [
+          2,
+          0.47,
+          11
+        ]
+      }
+    },
+    {
+      "tick": 5,
+      "at_ms": 8000,
+      "title": "Find the application",
+      "caption": "The access sorter reads the application label to choose a service lane.",
+      "camera": {
+        "position": [
+          8.5,
+          4,
+          15
+        ],
+        "target": [
+          6,
+          0.6,
+          11
+        ]
+      }
+    },
+    {
+      "tick": 10,
+      "at_ms": 16000,
+      "title": "Choose a trustworthy label",
+      "caption": "The paint booth replaces an untrusted label with EF for this voice packet. Its ECN bits stay unchanged.",
+      "camera": {
+        "position": [
+          13,
+          3,
+          14
+        ],
+        "target": [
+          11,
+          0.6,
+          11
+        ]
+      }
+    },
+    {
+      "tick": 15,
+      "at_ms": 24000,
+      "title": "Keep the promise small",
+      "caption": "The token tank admits the contracted voice packet and limits excess traffic before the priority queue.",
+      "camera": {
+        "position": [
+          19,
+          4,
+          15
+        ],
+        "target": [
+          16,
+          0.8,
+          11
+        ]
+      }
+    },
+    {
+      "tick": 22,
+      "at_ms": 32000,
+      "title": "Wait in a real queue",
+      "caption": "A buffer holds packets until the scheduler has room. The trace records each wait.",
+      "camera": {
+        "position": [
+          25,
+          4,
+          15
+        ],
+        "target": [
+          23,
+          0.6,
+          11
+        ]
+      }
+    },
+    {
+      "tick": 30,
+      "at_ms": 40000,
+      "title": "Share the output",
+      "caption": "The priority lane goes first; weighted lanes share the capacity left over.",
+      "camera": {
+        "position": [
+          30,
+          4,
+          18
+        ],
+        "target": [
+          28,
+          0.7,
+          14
+        ]
+      }
+    },
+    {
+      "tick": 33,
+      "at_ms": 47000,
+      "title": "One hop complete",
+      "caption": "Our voice packet reaches the output. The remaining factory keeps serving other classes.",
+      "camera": {
+        "position": [
+          33,
+          4,
+          18
+        ],
+        "target": [
+          31,
+          0.5,
+          14
+        ]
+      }
+    },
+    {
+      "tick": 80,
+      "at_ms": 55000,
+      "title": "Make congestion visible",
+      "caption": "AF packets with higher drop precedence meet earlier Spillway thresholds. Drops and deliveries remain visible in the dashboard.",
+      "camera": {
+        "position": [
+          27,
+          9,
+          24
+        ],
+        "target": [
+          23,
+          0.6,
+          17
+        ]
+      }
+    },
+    {
+      "tick": 160,
+      "at_ms": 67000,
+      "title": "The whole factory",
+      "caption": "Nine service classes share one connection in this historical RFC 4594 example. Each route is a real compiled datapath.",
+      "camera": {
+        "position": [
+          33,
+          34,
+          42
+        ],
+        "target": [
+          16,
+          0,
+          14
+        ]
+      }
+    },
+    {
+      "tick": 507,
+      "at_ms": 85000,
+      "title": "Every crate accounted for",
+      "caption": "The arrival trace has drained. Inspect the totals, replay a beat, or return to the beginner campaign.",
+      "camera": {
+        "position": [
+          31,
+          32,
+          40
+        ],
+        "target": [
+          16,
+          0,
+          14
+        ]
+      }
+    }
+  ]
+}

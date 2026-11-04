@@ -1,0 +1,4 @@
+import {chromium} from 'playwright';import {writeFileSync} from 'node:fs';
+const browser=await chromium.launch({headless:true,executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'}),page=await browser.newPage({viewport:{width:1920,height:1080}}),errors=[];
+page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
+await page.goto('http://localhost:8000');await page.getByRole('button',{name:'Continue campaign'}).click();await page.getByRole('button',{name:'Open the work order'}).click();await page.getByRole('button',{name:'3D',exact:true}).click();await page.locator('#floor canvas').waitFor();await page.screenshot({path:'research/browser/L01-3d.png'});console.log(await page.evaluate(()=>perHopDiagnostics()));console.log(errors);writeFileSync('research/browser/smoke3d.json',JSON.stringify({errors,diagnostics:await page.evaluate(()=>perHopDiagnostics())},null,2));await browser.close();

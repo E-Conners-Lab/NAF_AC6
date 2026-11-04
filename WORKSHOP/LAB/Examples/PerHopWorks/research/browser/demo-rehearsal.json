@@ -1,0 +1,33 @@
+{
+  "presenter_keys_only": true,
+  "fresh_progress": true,
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "wallMs": 85026,
+  "final": {
+    "mode": "demo",
+    "view": "3d",
+    "tick": 507,
+    "beat": 9,
+    "playing": false,
+    "finished": true,
+    "grade": null,
+    "render": {
+      "maxDrawCalls": 96,
+      "maxLiveCrates": 610,
+      "cameraMode": "demo",
+      "followId": null,
+      "drawCalls": 79,
+      "triangles": 99556,
+      "frames": 600,
+      "medianMs": 16.69999999999709,
+      "p95Ms": 16.70000000001164,
+      "renderer": "WebKit WebGL",
+      "pixelRatio": 1
+    }
+  },
+  "progress_unchanged": true,
+  "errors": []
+}

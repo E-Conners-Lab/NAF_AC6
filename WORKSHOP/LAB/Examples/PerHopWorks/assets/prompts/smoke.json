@@ -1,0 +1,5 @@
+{
+  "purpose": "disposable image tool smoke test",
+  "prompt": "Use case: stylized-concept. Asset type: technical smoke-test image for the Per-Hop Works educational factory game, not production key art. Generate a square 1024 by 1024 image: one original low-poly flat-shaded ivory conveyor machine and a few unmarked geometric crates on a charcoal factory floor, blue and orange accents, rough matte surfaces, simple clean silhouette, soft studio lighting. Decorative art only, no instructional diagram. Absolutely no text, no letters, no numbers, no digits, no glyph-like marks, no logos, no watermarks.",
+  "tool": "built-in ChatGPT image_gen"
+}

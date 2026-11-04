@@ -1,0 +1,9 @@
+{
+  "id": "icon",
+  "provider": "ChatGPT built-in image_gen",
+  "model": "not exposed by tool",
+  "intent": "generate using style reference",
+  "prompt": "Use the supplied title image ONLY as a style/color/material reference, not as an edit target. Generate a new composition. Friendly educational packet-factory game, matte ivory, deep teal, warm orange and sky-blue, flat-shaded low-poly PBR, roughness about 0.6. Emissive accents only on data sockets and token water. No text, no letters, no numbers. No logos, symbols, glyph-like marks, watermarks, signage, printed crate marks, UI, or people. Square app icon illustration. One chunky simple orange delivery crate in three-quarter isometric view, large centered silhouette, tiny luminous cream rectangular socket inset into its lid. Deep midnight teal rounded-square backing, generous even margins, soft clean low-poly flat shading. No border symbols, no lines that look like letters; readable at 32 pixels. No typography.",
+  "reference": "assets/images/title.webp",
+  "approval_basis": "Owner continuing authorization, 2026-11-04; assistant visual inspection"
+}

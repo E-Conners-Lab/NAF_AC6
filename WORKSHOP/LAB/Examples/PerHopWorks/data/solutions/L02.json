@@ -1,0 +1,196 @@
+{
+  "machines": [
+    {
+      "id": "in0",
+      "type": "dock_in",
+      "x": 1,
+      "y": 2,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "paint0",
+      "type": "paint_booth",
+      "x": 8,
+      "y": 2,
+      "rotation": 0,
+      "config": {
+        "dscp": 46
+      }
+    },
+    {
+      "id": "out0",
+      "type": "dock_out",
+      "x": 15,
+      "y": 2,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "in1",
+      "type": "dock_in",
+      "x": 1,
+      "y": 6,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "paint1",
+      "type": "paint_booth",
+      "x": 8,
+      "y": 6,
+      "rotation": 0,
+      "config": {
+        "dscp": 34
+      }
+    },
+    {
+      "id": "out1",
+      "type": "dock_out",
+      "x": 15,
+      "y": 6,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "in2",
+      "type": "dock_in",
+      "x": 1,
+      "y": 10,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "paint2",
+      "type": "paint_booth",
+      "x": 8,
+      "y": 10,
+      "rotation": 0,
+      "config": {
+        "dscp": 26
+      }
+    },
+    {
+      "id": "out2",
+      "type": "dock_out",
+      "x": 15,
+      "y": 10,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "in3",
+      "type": "dock_in",
+      "x": 1,
+      "y": 14,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "paint3",
+      "type": "paint_booth",
+      "x": 8,
+      "y": 14,
+      "rotation": 0,
+      "config": {
+        "dscp": 48
+      }
+    },
+    {
+      "id": "out3",
+      "type": "dock_out",
+      "x": 15,
+      "y": 14,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "in4",
+      "type": "dock_in",
+      "x": 1,
+      "y": 18,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "paint4",
+      "type": "paint_booth",
+      "x": 8,
+      "y": 18,
+      "rotation": 0,
+      "config": {
+        "dscp": 8
+      }
+    },
+    {
+      "id": "out4",
+      "type": "dock_out",
+      "x": 15,
+      "y": 18,
+      "rotation": 0,
+      "config": {}
+    }
+  ],
+  "links": [
+    {
+      "from": "in0",
+      "port": "out",
+      "to": "paint0",
+      "input": "in"
+    },
+    {
+      "from": "paint0",
+      "port": "out",
+      "to": "out0",
+      "input": "in"
+    },
+    {
+      "from": "in1",
+      "port": "out",
+      "to": "paint1",
+      "input": "in"
+    },
+    {
+      "from": "paint1",
+      "port": "out",
+      "to": "out1",
+      "input": "in"
+    },
+    {
+      "from": "in2",
+      "port": "out",
+      "to": "paint2",
+      "input": "in"
+    },
+    {
+      "from": "paint2",
+      "port": "out",
+      "to": "out2",
+      "input": "in"
+    },
+    {
+      "from": "in3",
+      "port": "out",
+      "to": "paint3",
+      "input": "in"
+    },
+    {
+      "from": "paint3",
+      "port": "out",
+      "to": "out3",
+      "input": "in"
+    },
+    {
+      "from": "in4",
+      "port": "out",
+      "to": "paint4",
+      "input": "in"
+    },
+    {
+      "from": "paint4",
+      "port": "out",
+      "to": "out4",
+      "input": "in"
+    }
+  ]
+}

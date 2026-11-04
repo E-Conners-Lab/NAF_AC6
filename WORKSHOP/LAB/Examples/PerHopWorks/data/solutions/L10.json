@@ -1,0 +1,174 @@
+{
+  "machines": [
+    {
+      "id": "video",
+      "type": "dock_in",
+      "x": 1,
+      "y": 3,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "paint-video",
+      "type": "paint_booth",
+      "x": 6,
+      "y": 3,
+      "rotation": 0,
+      "config": {
+        "dscp": 34
+      }
+    },
+    {
+      "id": "video-q",
+      "type": "buffer_belt",
+      "x": 15,
+      "y": 3,
+      "rotation": 0,
+      "config": {
+        "capacity": 256
+      }
+    },
+    {
+      "id": "backup",
+      "type": "dock_in",
+      "x": 1,
+      "y": 10,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "paint-backup",
+      "type": "paint_booth",
+      "x": 6,
+      "y": 10,
+      "rotation": 0,
+      "config": {
+        "dscp": 10
+      }
+    },
+    {
+      "id": "backup-q",
+      "type": "buffer_belt",
+      "x": 15,
+      "y": 10,
+      "rotation": 0,
+      "config": {
+        "capacity": 256
+      }
+    },
+    {
+      "id": "web",
+      "type": "dock_in",
+      "x": 1,
+      "y": 17,
+      "rotation": 0,
+      "config": {}
+    },
+    {
+      "id": "paint-web",
+      "type": "paint_booth",
+      "x": 6,
+      "y": 17,
+      "rotation": 0,
+      "config": {
+        "dscp": 0
+      }
+    },
+    {
+      "id": "web-q",
+      "type": "buffer_belt",
+      "x": 15,
+      "y": 17,
+      "rotation": 0,
+      "config": {
+        "capacity": 256
+      }
+    },
+    {
+      "id": "merge",
+      "type": "priority_merger",
+      "x": 23,
+      "y": 10,
+      "rotation": 0,
+      "config": {
+        "quantum": 500,
+        "priority": "priority",
+        "weights": {
+          "video": 3,
+          "backup": 2,
+          "web": 1
+        }
+      }
+    },
+    {
+      "id": "out",
+      "type": "dock_out",
+      "x": 28,
+      "y": 10,
+      "rotation": 0,
+      "config": {}
+    }
+  ],
+  "links": [
+    {
+      "from": "video",
+      "port": "out",
+      "to": "paint-video",
+      "input": "in"
+    },
+    {
+      "from": "paint-video",
+      "port": "out",
+      "to": "video-q",
+      "input": "in"
+    },
+    {
+      "from": "video-q",
+      "port": "out",
+      "to": "merge",
+      "input": "video"
+    },
+    {
+      "from": "backup",
+      "port": "out",
+      "to": "paint-backup",
+      "input": "in"
+    },
+    {
+      "from": "paint-backup",
+      "port": "out",
+      "to": "backup-q",
+      "input": "in"
+    },
+    {
+      "from": "backup-q",
+      "port": "out",
+      "to": "merge",
+      "input": "backup"
+    },
+    {
+      "from": "web",
+      "port": "out",
+      "to": "paint-web",
+      "input": "in"
+    },
+    {
+      "from": "paint-web",
+      "port": "out",
+      "to": "web-q",
+      "input": "in"
+    },
+    {
+      "from": "web-q",
+      "port": "out",
+      "to": "merge",
+      "input": "web"
+    },
+    {
+      "from": "merge",
+      "port": "out",
+      "to": "out",
+      "input": "in"
+    }
+  ]
+}

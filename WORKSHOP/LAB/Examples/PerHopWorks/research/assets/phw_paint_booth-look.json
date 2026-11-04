@@ -1,0 +1,25 @@
+{
+  "at": "2026-11-04T19:39:56.314382+00:00",
+  "tool": "look",
+  "arguments": {
+    "mode": "angles",
+    "target": [
+      "phw_paint_booth"
+    ],
+    "views": [
+      "front",
+      "right",
+      "top",
+      "three_quarter"
+    ],
+    "shading": "solid",
+    "max_size": 1400,
+    "user_prompt": "what gates install them let me know if when you need me to reload blender cli should be available no hurdles here"
+  },
+  "text": [
+    "Tiles left to right, top to bottom: front, right, top, three_quarter. Framed 4 objects, 0.94 x 0.88 x 1.17 m across, centred at [0.0, 0.0, 0.59]."
+  ],
+  "images": [
+    "research/assets/phw_paint_booth-angles-0.png"
+  ]
+}

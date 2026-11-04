@@ -1,0 +1,112 @@
+[
+  {
+    "id": "telephony",
+    "tick": 0,
+    "dock": "in",
+    "octet": 0,
+    "class": "telephony",
+    "label": {
+      "application": "voip"
+    },
+    "size": 500
+  },
+  {
+    "id": "signaling",
+    "tick": 4,
+    "dock": "in",
+    "octet": 0,
+    "class": "signaling",
+    "label": {
+      "application": "sip"
+    },
+    "size": 500
+  },
+  {
+    "id": "conferencing",
+    "tick": 8,
+    "dock": "in",
+    "octet": 0,
+    "class": "conferencing",
+    "label": {
+      "application": "conference"
+    },
+    "size": 500
+  },
+  {
+    "id": "interactive",
+    "tick": 12,
+    "dock": "in",
+    "octet": 0,
+    "class": "interactive",
+    "label": {
+      "application": "gaming"
+    },
+    "size": 500
+  },
+  {
+    "id": "streaming",
+    "tick": 16,
+    "dock": "in",
+    "octet": 0,
+    "class": "streaming",
+    "label": {
+      "application": "streaming"
+    },
+    "size": 500
+  },
+  {
+    "id": "broadcast",
+    "tick": 20,
+    "dock": "in",
+    "octet": 0,
+    "class": "broadcast",
+    "label": {
+      "application": "broadcast"
+    },
+    "size": 500
+  },
+  {
+    "id": "low_latency",
+    "tick": 24,
+    "dock": "in",
+    "octet": 0,
+    "class": "low_latency",
+    "label": {
+      "application": "ordering"
+    },
+    "size": 500
+  },
+  {
+    "id": "oam",
+    "tick": 28,
+    "dock": "in",
+    "octet": 0,
+    "class": "oam",
+    "label": {
+      "application": "snmp"
+    },
+    "size": 500
+  },
+  {
+    "id": "high_throughput",
+    "tick": 32,
+    "dock": "in",
+    "octet": 0,
+    "class": "high_throughput",
+    "label": {
+      "application": "backup"
+    },
+    "size": 500
+  },
+  {
+    "id": "standard",
+    "tick": 36,
+    "dock": "in",
+    "octet": 0,
+    "class": "standard",
+    "label": {
+      "application": "web"
+    },
+    "size": 500
+  }
+]

@@ -1,0 +1,5 @@
+// Camera choreography is display-only. It cannot alter a simulation result.
+export function beatAt(beats,tick){let index=0;while(index<beats.length-1&&tick>=beats[index+1].tick)index++;return index;}
+function spline(a,b,c,d,t){return b+.5*t*(c-a+t*(2*a-5*b+4*c-d+t*(3*(b-c)+d-a)));}
+export function cameraAt(beats,tick,reduced=false){const i=beatAt(beats,tick),b=beats[i],c=beats[Math.min(i+1,beats.length-1)],t=reduced||i===beats.length-1?0:Math.max(0,Math.min(1,(tick-b.tick)/(c.tick-b.tick))),a=beats[Math.max(0,i-1)],d=beats[Math.min(beats.length-1,i+2)];return Object.fromEntries(['position','target'].map(key=>[key,b.camera[key].map((v,n)=>spline(a.camera[key][n],v,c.camera[key][n],d.camera[key][n],t))]));}
+export function timelineTick(beats,elapsed){let i=0;while(i<beats.length-1&&elapsed>=beats[i+1].at_ms)i++;const a=beats[i],b=beats[Math.min(i+1,beats.length-1)];if(a===b)return a.tick;const t=Math.max(0,Math.min(1,(elapsed-a.at_ms)/(b.at_ms-a.at_ms)));return a.tick+(b.tick-a.tick)*t;}

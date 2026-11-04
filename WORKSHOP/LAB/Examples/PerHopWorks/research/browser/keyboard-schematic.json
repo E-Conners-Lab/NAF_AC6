@@ -1,0 +1,102 @@
+{
+  "records": [
+    {
+      "test": "initial incorrect L01 fails without unlocking L02",
+      "passed": true
+    },
+    {
+      "level": "L01",
+      "keyboard_only": true,
+      "checks": "3 / 3 CHECKS",
+      "passed": true,
+      "render": null
+    },
+    {
+      "level": "L02",
+      "keyboard_only": true,
+      "checks": "3 / 3 CHECKS",
+      "passed": true,
+      "render": null
+    },
+    {
+      "level": "L03",
+      "keyboard_only": true,
+      "checks": "3 / 3 CHECKS",
+      "passed": true,
+      "render": null
+    },
+    {
+      "level": "L04",
+      "keyboard_only": true,
+      "checks": "3 / 3 CHECKS",
+      "passed": true,
+      "render": null
+    },
+    {
+      "level": "L05",
+      "keyboard_only": true,
+      "checks": "4 / 4 CHECKS",
+      "passed": true,
+      "render": null
+    },
+    {
+      "level": "L06",
+      "keyboard_only": true,
+      "checks": "4 / 4 CHECKS",
+      "passed": true,
+      "render": null
+    },
+    {
+      "level": "L07",
+      "keyboard_only": true,
+      "checks": "4 / 4 CHECKS",
+      "passed": true,
+      "render": null
+    },
+    {
+      "level": "L08",
+      "keyboard_only": true,
+      "checks": "5 / 5 CHECKS",
+      "passed": true,
+      "render": null
+    },
+    {
+      "level": "L09",
+      "keyboard_only": true,
+      "checks": "5 / 5 CHECKS",
+      "passed": true,
+      "render": null
+    },
+    {
+      "level": "L10",
+      "keyboard_only": true,
+      "checks": "4 / 4 CHECKS",
+      "passed": true,
+      "render": null
+    },
+    {
+      "level": "L11",
+      "keyboard_only": true,
+      "checks": "5 / 5 CHECKS",
+      "passed": true,
+      "render": null
+    },
+    {
+      "level": "L12",
+      "keyboard_only": true,
+      "checks": "11 / 11 CHECKS",
+      "passed": true,
+      "render": null
+    },
+    {
+      "test": "Crate Trace keyboard event seeking",
+      "passed": true
+    },
+    {
+      "test": "reload preserves all earned unlocks and drafts",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "at": "2026-11-04T20:36:52.022Z"
+}
