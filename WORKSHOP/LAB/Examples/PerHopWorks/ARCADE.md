@@ -35,18 +35,18 @@ build:
   wall_time: "1h58m33s"
   spec_driven:
     framework: "GitHub Spec Kit"
-    framework_version: unknown
+    framework_version: "0.7.1.dev0"
     artifacts: [constitution, spec, clarify, plan, tasks, analysis, checklists]
     task_count: 69
     loops_or_phases: 5
   model: "gpt-6-astra"
   helper_models: ["one planning research helper (model ID not recorded separately)"]
   harness: "Codex"
-  harness_version: unknown
-  mcp_servers: ["RFC MCP", "Blender MCP"]
-  rag_and_sources: ["RFC 4594", "RFC 2697", "RFC 2698", "RFC 3260", "RFC 4594 status links: RFC 5865 and RFC 8622", "48-entry RFC fact ledger"]
-  skills_and_plugins: ["Spec Kit skills (constitution, specify, clarify, plan, tasks, analyze, implement)"]
-  other_tools: ["Three.js (vendored, pinned)", "Chrome browser automation", "axe accessibility checks", "Node test runner"]
+  harness_version: unknown   # not recorded; Spec Kit integration was "codex" with skills enabled
+  mcp_servers: ["RFC MCP (@mjpitz/mcp-rfc 0.2504.4, plus a local HTML-anchor compatibility parser)", "Blender MCP (mcp-for-blender 2.2.7, Blender addon 1.8, Blender 5.2.1 LTS)"]
+  rag_and_sources: ["Ten Tier-1 RFCs fetched through RFC MCP and saved locally: 2474, 2475, 2597, 2598, 2697, 2698, 3168, 3246, 3260, 3290, 4594", "Status/update RFCs 5865 and 8622 (links supplied by the owner)", "48-entry fact ledger tied to 13 saved live RFC MCP calls, with SHA-256 evidence"]
+  skills_and_plugins: ["Spec Kit skills via the Codex integration: constitution, specify, clarify, plan, tasks, analyze, checklist, implement", "Ralph-style bounded loops, run directly by Codex because the Ralph plugin targets Claude Code stop hooks"]
+  other_tools: ["Three.js r180 (vendored, pinned)", "uv 0.10.12 / uvx", "Node v25.3.0 test runner", "Python 3.14.6 launcher", "Chrome browser automation", "axe accessibility checks"]
   human_prompts: unknown
   usage:
     input_tokens: 31129855
