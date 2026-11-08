@@ -32,6 +32,7 @@ and the [measured build time, tokens and estimated cost](WORKSHOP/LAB/Examples/P
 | [SPEC.md](WORKSHOP/LAB/StarterKit/SPEC.md) | Players, learning outcomes, gameplay, and testable success criteria |
 | [PLAN.md](WORKSHOP/LAB/StarterKit/PLAN.md) | Implementation choices, data contracts, and verification |
 | [Attendee README template](WORKSHOP/LAB/StarterKit/README.md) | Copy to **your repository root** and personalize |
+| [ARCADE.md](WORKSHOP/LAB/StarterKit/ARCADE.md) | Optional: your build agent fills this in so your game can be listed and played in the web Arcade |
 | [Prefix Quest example](WORKSHOP/LAB/Examples/PrefixQuest/README.md) | A completed set of planning documents and concrete test inputs; no game implementation included |
 | [Per-Hop Works game](WORKSHOP/LAB/Examples/PerHopWorks/README.md) | Playable twelve-level 3D/SVG game, five-loop Spec Kit evidence, prompts and build ledger |
 | [Workshop slides](WORKSHOP/LECTURE/NAF%20AC6%20Workshop%20-%20Itential.pptx) | Lecture and lab context |
@@ -56,6 +57,10 @@ flowchart LR
 ```
 
 Your coding agent helps build the game. The recommended game itself runs without an AI model. Ralph loops, rendering libraries, and additional build tools are optional extensions after the basic experience works.
+
+## Share your game in the Arcade
+
+Finished games can be listed, and played, at **[automateyournetwork.com/arcade](https://automateyournetwork.com/arcade/)**. Fill in [`StarterKit/ARCADE.md`](WORKSHOP/LAB/StarterKit/ARCADE.md) with your build agent and send John your GitHub URL. See the lab guide for the steps.
 
 ## Work in a repository you own
 
