@@ -4,7 +4,7 @@
 
 You will leave with a repository you own, a constitution, a specification, a plan, a small game, and evidence that its answers are correct. The build block is 60 minutes; setup and group design happen beforehand.
 
-**[Templates](StarterKit/)** · **[Worked example](Examples/PrefixQuest/README.md)** · **[Copyable project README](StarterKit/README.md)** · **[Workshop slides](../LECTURE/NAF%20AC6%20Workshop%20-%20Itential.pptx)**
+**[Templates](StarterKit/)** · **[Arcade](https://automateyournetwork.com/arcade/)** · **[Worked example](Examples/PrefixQuest/README.md)** · **[Copyable project README](StarterKit/README.md)** · **[Workshop slides](../LECTURE/NAF%20AC6%20Workshop%20-%20Itential.pptx)**
 
 ## 1. Pick a decision worth practicing
 
@@ -165,6 +165,15 @@ Personalize the root README you copied. Add the actual game status, controls, le
 Review `git status` and your changes, stage the intended files, commit, and push your current branch. If your game is on a feature branch, merge it to your chosen publishing branch when ready; don't assume the default branch contains it.
 
 For an optional live demo on GitHub Pages, publish the branch containing `index.html`: **Settings → Pages → Deploy from a branch → chosen branch → `/ (root)`**. Follow the [GitHub Pages publishing instructions](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site). Test the resulting URL before adding it to your README.
+
+### Optional: put your game in the Arcade
+
+Your game can go from localhost to the live internet. **[The Arcade](https://automateyournetwork.com/arcade/)** lists spec-driven network and network-automation games with their builder, model, harness, MCP servers, sources and runtime details, and can host playable static games.
+
+1. Copy [StarterKit/ARCADE.md](StarterKit/ARCADE.md) to `ARCADE.md` at the root of your repository, or paste the prompt from the [Arcade page](https://automateyournetwork.com/arcade/#submit) into the session that built your game.
+2. Let **your build agent** fill it in. It knows the model, harness, MCP servers, sources and skills it used. It should write `unknown` instead of guessing. You provide only your name, GitHub username, optional location and links, whether this is your first spec-driven project, and your consent.
+3. Run the game once to confirm the Runtime section, add a 16:9 card image under 1 MB, then commit and push.
+4. Send your public GitHub URL to John. Nothing is listed unless `consent_to_publish: true` is set in your file. See the finished example in [Examples/PerHopWorks/ARCADE.md](Examples/PerHopWorks/ARCADE.md).
 
 ### Your 90-second show-and-tell
 
